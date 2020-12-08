@@ -1,0 +1,149 @@
+.header {
+  &-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 27px;
+    text-decoration: none;
+
+    &-icon {
+      display: block;
+      flex-shrink: 0;
+    }
+
+    span {
+      display: block;
+      margin-left: 11px;
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 28px;
+      color: #000000;
+    }
+  }
+
+  &-top_row {
+    position: relative;
+    box-sizing: border-box;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+
+    .container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    p {
+      display: block;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      color: #828282;
+    }
+  }
+
+  &-menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+
+    &-item {
+      margin-right: 36px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &-link {
+      position: relative;
+      display: block;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #333333;
+      text-decoration: none;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -29px;
+        height: 1px;
+        width: 100%;
+        background-color: #000;
+        transform-origin: left center;
+        transition: 0.2s;
+        transform: scaleX(0);
+      }
+
+      &:hover {
+        color: #000;
+
+        &:before {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+
+  &-phone {
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #333333;
+    padding-right: 17px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -4.5px;
+      display: block;
+      height: 9px;
+      width: 9px;
+      background: center / auto url(../img/angl.svg) no-repeat;
+    }
+  }
+
+  &-bot_row {
+    box-sizing: border-box;
+    padding: 21px 0;
+
+    .container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  &-catalog_btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 38px;
+
+    &-icon {
+      display: block;
+      flex-shrink: 0;
+    }
+
+    span {
+      display: block;
+      margin-left: 14px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #333333;
+    }
+  }
+}
