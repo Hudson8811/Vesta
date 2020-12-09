@@ -1,4 +1,11 @@
 .header {
+  @include for-tablet {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
   &-logo {
     display: flex;
     justify-content: flex-start;
@@ -6,9 +13,17 @@
     margin-right: 27px;
     text-decoration: none;
 
+    @include for-tablet {
+      margin-right: auto;
+    }
+
     &-icon {
       display: block;
       flex-shrink: 0;
+
+      @include for-tablet {
+        width: 22px;
+      }
     }
 
     span {
@@ -18,6 +33,12 @@
       font-size: 19px;
       line-height: 28px;
       color: #000000;
+
+      @include for-tablet {
+        font-size: 14px;
+        line-height: 20px;
+        margin-left: 9px;
+      }
     }
   }
 
@@ -26,6 +47,10 @@
     box-sizing: border-box;
     padding: 15px 0;
     border-bottom: 1px solid #e0e0e0;
+
+    @include for-tablet {
+      display: none;
+    }
 
     .container {
       display: flex;
@@ -39,6 +64,10 @@
       font-size: 12px;
       line-height: 18px;
       color: #828282;
+
+      @include for-desktop {
+        display: none;
+      }
     }
   }
 
@@ -48,6 +77,10 @@
     justify-content: flex-start;
     align-items: center;
     margin: 0 auto;
+
+    @include for-desktop {
+      margin-right: 30px;
+    }
 
     &-item {
       margin-right: 36px;
@@ -78,6 +111,10 @@
         transform-origin: left center;
         transition: 0.2s;
         transform: scaleX(0);
+
+        @include for-desktop {
+          bottom: -21px;
+        }
       }
 
       &:hover {
@@ -118,6 +155,10 @@
     box-sizing: border-box;
     padding: 21px 0;
 
+    @include for-tablet {
+      display: none;
+    }
+
     .container {
       display: flex;
       justify-content: flex-start;
@@ -132,6 +173,10 @@
     text-decoration: none;
     margin-right: 38px;
 
+    @include for-desktop {
+      margin-right: 10px;
+    }
+
     &-icon {
       display: block;
       flex-shrink: 0;
@@ -144,6 +189,24 @@
       font-size: 16px;
       line-height: 20px;
       color: #333333;
+    }
+  }
+
+  &-mobile-row {
+    display: none;
+    box-sizing: border-box;
+    padding: 18px 0;
+    background: #ffffff;
+    box-shadow: 0px 2px 6px rgba(60, 59, 90, 0.04), 0px 2px 40px rgba(60, 59, 90, 0.04);
+
+    @include for-tablet {
+      display: block;
+    }
+
+    .container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
     }
   }
 }

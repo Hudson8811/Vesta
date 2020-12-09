@@ -56,4 +56,69 @@ $('.header-catalog_btn').click(function(e){
     e.preventDefault();
     $('.desktop-slide_menu').toggleClass('desktop-slide_menu-active')
 })
+
+$('.footer-heading').click(function(){
+    if($(window).width() < 1001){
+        if(!$(this).siblings('.footer-item').hasClass('footer-item-active')){
+            $('.footer-item').removeClass('footer-item-active')
+            $('.footer-heading').removeClass('footer-heading-active')
+            $(this).addClass('footer-heading-active')
+            $(this).siblings('.footer-item').addClass('footer-item-active')
+        } else{
+            $('.footer-heading').removeClass('footer-heading-active')
+            $('.footer-item').removeClass('footer-item-active')
+        }
+        
+    } else{
+        $('.footer-heading').removeClass('footer-heading-active')
+        $(this).siblings('.footer-item').removeClass('footer-item-active')
+    }
+})
+
+if($(window).width() > 1001){
+    $('.footer-heading').removeClass('footer-heading-active')
+    $('.footer-item').removeClass('footer-item-active')
+}
+$(window).resize(function(){
+    if($(window).width() > 1001){
+        $('.footer-heading').removeClass('footer-heading-active')
+        $('.footer-item').removeClass('footer-item-active')
+    }
+})
+
+
+$('.search-link').click(function(e){
+    e.preventDefault()
+    $('.search-mobile-wrap').addClass('search-mobile-wrap-active')
+})
+
+$('.search-mobile-close').click(function(e){
+    e.preventDefault()
+    $('.search-mobile-wrap').removeClass('search-mobile-wrap-active')
+})
+
+$('.mobile-catalog-btn').click(function(e){
+    e.preventDefault()
+    $(this).toggleClass('mobile-catalog-btn-active')
+    $('.mobile-catalog').toggleClass('mobile-catalog-active')
+    $('.back-menu-btn').addClass('back-menu-btn-active')
+})
+
+$('.back-menu-btn').click(function(e){
+    e.preventDefault()
+    $(this).removeClass('back-menu-btn-active')
+    $('.mobile-catalog-btn').removeClass('mobile-catalog-btn-active')
+    $('.mobile-catalog').removeClass('mobile-catalog-active')
+})
+
+
+$('.mobile-burger').click(function(e){
+    e.preventDefault()
+    $(this).toggleClass('mobile-burger-active')
+    $('.mobile-menu-wrap').toggleClass('mobile-menu-wrap-active')
+    $('.back-menu-btn').removeClass('back-menu-btn-active')
+    $('.mobile-catalog').removeClass('mobile-catalog-active')
+    $('.mobile-catalog-btn').removeClass('mobile-catalog-btn-active')
+})
+
 });

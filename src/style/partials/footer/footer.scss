@@ -5,6 +5,10 @@
   border-top: 1px solid #e0e0e0;
   padding-top: 56px;
 
+  @include for-tablet {
+    margin-top: 40px;
+  }
+
   &-phone {
     display: block;
     text-decoration: none;
@@ -13,6 +17,14 @@
     line-height: 20px;
     color: #333333;
     margin-bottom: 28px;
+
+    @include for-tablet {
+      margin-bottom: 10px;
+    }
+
+    @include for-mobile {
+      margin-bottom: 28px;
+    }
   }
 
   &-adress {
@@ -21,6 +33,10 @@
     font-size: 14px;
     line-height: 20px;
     color: #333333;
+
+    @include for-mobile {
+      margin-bottom: 14px;
+    }
   }
 
   &-stick {
@@ -28,6 +44,10 @@
 
     &-wrap {
       margin: 12px 0 15px;
+
+      @include for-tablet {
+        display: none;
+      }
     }
   }
 
@@ -37,11 +57,48 @@
     font-size: 18px;
     line-height: 24px;
     color: #000000;
+
+    @include for-tablet {
+      position: relative;
+      cursor: pointer;
+      margin-bottom: 15px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -3.5px;
+        display: block;
+        width: 10px;
+        height: 7px;
+        background: center / auto url(../img/arrow-check.svg) no-repeat;
+        transition: 0.2s;
+      }
+
+      &-active {
+        &:after {
+          transform: rotate(180deg);
+        }
+      }
+    }
   }
 
   &-item {
+    @include for-tablet {
+      display: none;
+
+      &:last-child {
+        margin-bottom: 20px;
+      }
+    }
+
     & + & {
       margin-top: 12px;
+    }
+
+    &-active {
+      display: block;
     }
   }
 
@@ -63,12 +120,37 @@
     list-style: none;
     width: 15.2%;
 
+    @include for-tablet {
+      width: 100%;
+
+      &:last-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+      }
+    }
+
+    @include for-mobile {
+      &:last-child {
+        display: block;
+      }
+    }
+
     &:nth-child(4) {
       width: 20.1%;
+
+      @include for-tablet {
+        width: 100%;
+      }
     }
 
     &:nth-child(5) {
       width: 23.76%;
+
+      @include for-tablet {
+        width: 100%;
+      }
     }
 
     &-wrap {
@@ -77,6 +159,11 @@
       align-items: stretch;
       box-sizing: border-box;
       padding-bottom: 56px;
+
+      @include for-tablet {
+        display: block;
+        padding-bottom: 35px;
+      }
     }
   }
 
@@ -89,6 +176,13 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      @include for-tablet {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: calc(100% - 32px);
+      }
     }
 
     p {
@@ -98,6 +192,13 @@
       font-size: 13px;
       line-height: 20px;
       color: #bdbdbd;
+
+      @include for-tablet {
+        font-size: 11px;
+        line-height: 16px;
+        width: 100%;
+        max-width: 542px;
+      }
     }
 
     a {
@@ -107,6 +208,13 @@
       line-height: 20px;
       color: #e0e0e0;
       text-decoration: none;
+
+      @include for-tablet {
+        font-size: 11px;
+        line-height: 16px;
+        margin-bottom: 9px;
+        order: -1;
+      }
     }
   }
 }

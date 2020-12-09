@@ -20,6 +20,10 @@ body {
   width: calc(100% - 104px);
   max-width: 1225px;
   margin: 0 auto;
+
+  @include for-mobile {
+    width: calc(100% - 32px);
+  }
 }
 
 .search {
@@ -27,6 +31,10 @@ body {
   display: block;
   height: 48px;
   width: 34.44%;
+
+  @include for-desktop {
+    width: 20%;
+  }
 
   input {
     display: block;
@@ -235,6 +243,11 @@ body {
     width: 14px;
     background: center / auto url(../img/arrow.svg) no-repeat;
   }
+
+  @include for-tablet {
+    width: 159px;
+    font-size: 13px;
+  }
 }
 
 .slick-arrow {
@@ -244,6 +257,10 @@ body {
   margin-top: -14px;
   cursor: pointer;
   transition: 0.2s;
+
+  @include for-tablet {
+    display: none !important;
+  }
 
   path {
     transition: 0.2s;
@@ -273,6 +290,10 @@ body {
   width: 100%;
   bottom: 37px;
 
+  @include for-mobile {
+    bottom: 20px;
+  }
+
   button {
     display: block;
     box-sizing: border-box;
@@ -286,6 +307,12 @@ body {
     font-size: 0;
     margin: 0 6px;
     transition: 0.2s;
+
+    @include for-tablet {
+      width: 5px;
+      height: 5px;
+      margin: 0 5px;
+    }
 
     &:hover {
       border-color: #eb5757;
@@ -306,6 +333,10 @@ body {
   justify-content: flex-start;
   align-items: center;
   margin-top: 140px;
+
+  @include for-tablet {
+    margin: 0;
+  }
 
   li {
     margin-right: 8px;
@@ -411,5 +442,15 @@ body {
     top: -12px;
     border: 4px solid transparent;
     border-bottom: 8px solid #eb5757;
+  }
+}
+
+.search-link,
+.basket-link {
+  margin-right: 23px;
+  display: block;
+
+  img {
+    display: block;
   }
 }

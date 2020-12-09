@@ -8,3 +8,21 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@mixin for-desktop {
+  @media (max-width: 1240px) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin for-mobile {
+  @media (max-width: 660px) {
+    @content;
+  }
+}
