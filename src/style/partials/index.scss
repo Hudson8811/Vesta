@@ -70,6 +70,10 @@
       display: block;
       padding: 0;
 
+      @include for-mobile {
+        height: 362px;
+      }
+
       h2 {
         max-width: 530px;
         font-weight: normal;
