@@ -242,6 +242,8 @@ body {
     height: 9px;
     width: 14px;
     background: center / auto url(../img/arrow.svg) no-repeat;
+    top: 50%;
+    margin-top: -4px;
   }
 
   @include for-tablet {

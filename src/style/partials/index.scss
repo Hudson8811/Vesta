@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 20px;
+  grid-gap: 20px;
 
   &-wrapper {
     @include for-tablet {
@@ -12,14 +12,14 @@
 
   @include for-tablet {
     padding-top: 60px;
-    gap: 24px;
+    grid-gap: 24px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 181px 181px 231px 231px;
   }
 
   @include for-mobile {
     padding-top: 60px;
-    gap: 12px;
+    grid-gap: 12px;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
