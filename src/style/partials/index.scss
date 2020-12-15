@@ -154,6 +154,7 @@
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 3;
+        overflow: hidden;
 
         @include for-tablet {
           grid-column-end: 3;
