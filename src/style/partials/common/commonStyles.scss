@@ -4,6 +4,22 @@ $noto: 'Noto Sans', sans-serif;
 * {
   outline: none;
 }
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+
+  -webkit-locale: auto;
+  white-space: normal;
+}
+
+html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
 
 body {
   position: relative;
@@ -31,9 +47,11 @@ body {
   display: block;
   height: 48px;
   width: 34.44%;
+  margin-right: 24px;
 
   @include for-desktop {
     width: 20%;
+    margin-right: 0;
   }
 
   input {
@@ -105,8 +123,12 @@ body {
   border-radius: 3px;
   text-decoration: none;
   cursor: pointer;
-  margin-left: auto;
+  margin-left: 26px;
   transition: 0.2s;
+
+  @include for-desktop {
+    margin-left: auto;
+  }
 
   svg {
     display: block;
