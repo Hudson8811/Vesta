@@ -113,6 +113,7 @@ body {
 }
 
 .basket {
+  position: relative;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -125,6 +126,31 @@ body {
   cursor: pointer;
   margin-left: 26px;
   transition: 0.2s;
+
+  &.is-added {
+    b {
+      display: flex;
+    }
+  }
+
+  b {
+    position: absolute;
+    top: 8px;
+    right: 11px;
+    display: none;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #eb5757;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+  }
 
   @include for-desktop {
     margin-left: auto;
@@ -476,5 +502,34 @@ body {
 
   img {
     display: block;
+  }
+}
+
+.basket-link {
+  position: relative;
+
+  &.is-added {
+    b {
+      display: flex;
+    }
+  }
+
+  b {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    display: none;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #eb5757;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
   }
 }
