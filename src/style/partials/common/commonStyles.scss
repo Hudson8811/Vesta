@@ -146,6 +146,10 @@ body {
     }
   }
 
+  &:active {
+    border-color: #000;
+  }
+
   b {
     position: absolute;
     top: 8px;
@@ -245,6 +249,9 @@ body {
       opacity: 0.3;
     }
   }
+
+  &:active {
+  }
 }
 
 .key_block {
@@ -294,6 +301,10 @@ body {
   cursor: pointer;
 
   &:hover {
+    background: #d73535;
+  }
+
+  &:active {
     background: #d73535;
   }
 
