@@ -133,6 +133,19 @@ body {
     }
   }
 
+  &.is-disabled {
+    border: 1px solid #e0e0e0;
+    pointer-events: none;
+
+    span {
+      opacity: 0.3;
+    }
+
+    svg {
+      opacity: 0.3;
+    }
+  }
+
   b {
     position: absolute;
     top: 8px;
@@ -219,6 +232,19 @@ body {
   &:hover {
     border-color: #000;
   }
+
+  &.is-disabled {
+    border: 1px solid #e0e0e0;
+    pointer-events: none;
+
+    span {
+      opacity: 0.3;
+    }
+
+    img {
+      opacity: 0.3;
+    }
+  }
 }
 
 .key_block {
@@ -297,6 +323,11 @@ body {
   @include for-tablet {
     width: 159px;
     font-size: 13px;
+  }
+
+  &.is-disabled {
+    background: #e0e0e0;
+    pointer-events: none;
   }
 }
 
