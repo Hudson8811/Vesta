@@ -564,3 +564,8 @@ body {
     align-items: center;
   }
 }
+
+.disable {
+  pointer-events: none;
+  opacity: 0.5s;
+}
