@@ -479,7 +479,7 @@ body {
   position: absolute;
   z-index: 99;
   box-sizing: border-box;
-  width: 291px;
+  width: 326px;
   border: 1px solid #e0e0e0;
   transform-origin: center top;
   transition: 0.2s;
@@ -500,7 +500,7 @@ body {
   &-link {
     display: block;
     box-sizing: border-box;
-    padding: 16px 20px;
+    padding: 12px 15px;
     background-color: #fff;
     font-weight: normal;
     font-size: 14px;
@@ -579,4 +579,14 @@ body {
 .disable {
   pointer-events: none;
   opacity: 0.5s;
+}
+
+.hidden {
+  overflow: hidden!important;
+}
+
+.slick-catalog {
+    .slick-dots {
+      bottom: -20px;
+    }
 }

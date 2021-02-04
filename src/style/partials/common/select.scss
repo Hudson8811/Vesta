@@ -1,0 +1,39 @@
+.choices[data-type*=select-one]:after {
+    
+    background: url("../img/select-icon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translate(0,-25%);
+    height: 10px;
+    width: 10px;
+    border-style: none; 
+    border-color: none; 
+    border-width: none;
+    
+}
+
+.choices[data-type*=select-one].is-open:after {
+    margin: 0;
+    transform: rotate(180deg);
+    margin-top: -5px;
+}
+
+.choices__list--single {
+    padding: 6px 16px 4px 4px;
+}
+
+.choices__inner {
+    border: 1px solid #E0E0E0;
+    border-radius: 3px;
+    background-color: #fff;
+    
+}
+
+.choices[data-type*=select-one] .choices__input {
+    display: none;
+}
+
+.choices {
+    margin-bottom: 0;
+   
+}

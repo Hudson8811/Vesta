@@ -93,4 +93,45 @@ $('.mobile-burger').click(function(e){
     $('.mobile-catalog-btn').removeClass('mobile-catalog-btn-active')
 })
 
+$('.desktop-slide_menu-link').click(function(e){
+    e.preventDefault();
+    $('.desktop-slide_menu-link').removeClass('desktop-slide_menu-link-active')
+    $(this).toggleClass('desktop-slide_menu-link-active')
+    if ($('.desktop-slide_content').hasClass('desktop-slide_content-active')) {
+        $('.desktop-slide_content').removeClass('desktop-slide_content-active')
+    } else {
+        $('.desktop-slide_content').addClass('desktop-slide_content-active')
+        console.log('работает')
+    }
+})
+
+$('.filter-mobile').click(function(e){
+    e.preventDefault();
+    $('.catalog__panel').addClass('catalog__panel-active')
+    $('.filter-mobile-close').toggleClass('filter-mobile-active')
+    $('body').addClass('hidden')
+})
+
+$('.filter-mobile-close').click(function (e) {
+    $('.catalog__panel').removeClass('catalog__panel-active')
+    $('body').removeClass('hidden')
+
+})
+
+$('.slick-catalog').slick({
+    infinity: true,
+    dots: true,
+    prevArrow: false,    
+    nextArrow: false,
+});
+// ('.desktop-slide_menu-link').click(function(e){
+//     e.preventDefault()
+//     $(this).toggleClass('desktop-slide_menu-link-active')
+//     console.log(this)
+//     // $('.mobile-menu-wrap').toggleClass('mobile-menu-wrap-active')
+//     // $('.back-menu-btn').removeClass('back-menu-btn-active')
+//     // $('.mobile-catalog').removeClass('mobile-catalog-active')
+//     // $('.mobile-catalog-btn').removeClass('mobile-catalog-btn-active')
+// })
+
 });

@@ -2,10 +2,18 @@
 @import 'partials/common/jquery.fancybox.min.css';
 @import 'partials/common/slick.scss';
 @import 'partials/common/mixin';
+@import 'partials/common/choices.min.css';
+
 
 // МОИ СТИЛИ
 @import 'partials/common/vars.scss';
 @import 'partials/common/commonStyles.scss';
+@import 'partials/common/proportion.scss';
 @import 'partials/footer/footer.scss';
 @import 'partials/header/header.scss';
 @import 'partials/index.scss';
+@import 'partials/common/desktop-slide.scss';
+@import 'partials/common/catalog.scss';
+@import 'partials/common/select.scss';
+
+

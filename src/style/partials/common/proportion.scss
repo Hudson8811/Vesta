@@ -1,0 +1,39 @@
+.catalog {
+
+    &__proportion {
+    }
+}
+.proportion {
+    
+    &__subtitle {
+    }
+    
+    &__filters {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    &__filter {
+        position: relative;
+        cursor: pointer;
+        display: inline-flex;
+
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+        span {
+        display: inline-flex;
+        padding: 8px 12px;
+        border: 1px solid #E0E0E0;
+        border-radius: 3px;
+        margin-top: 12px;
+        }
+        input {
+            display: none;
+            &:checked + span {
+                opacity: 0.6;
+            }
+        }
+    }
+}
+    
