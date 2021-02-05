@@ -1,102 +1,135 @@
-.desktop-slide_menu  {
-
+.desktop-slide_menu {
 }
 
 .desktop-slide_menu-active {
-
 }
 
 .desktop-slide_menu-link {
-    width: 100%;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 35px;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 12px;
+    width: 6px;
+    height: 6px;
+    background: center/contain url(../img/angl.svg) no-repeat;
+    transition: transform 0.2s linear;
+  }
 }
 .descktop-slide_menu-img {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .desktop-slide_menu-item {
-
 }
 
 .desktop-slide_menu-link-active {
-    background: #F2F2F2;
+  background: #f2f2f2;
+
+  &:before {
+    transform: rotate(-90deg);
+  }
 }
 
 .desktop-slide_content {
-    position: absolute;
-    top: 0;
-    left: 324px;
-    background-color: #fff;
-    width: 340px;
-    height: 100%;
-    border: 1px solid #e0e0e0;
-    box-sizing: border-box;
-    padding-left: 32px;
-    padding-top: 32px;
-    padding-right: 38px;
-    padding-bottom: 32px;
-    transform-origin: center top;
-    transition: 0.4s;
-    transform: scaleY(0);
-    overflow: auto;
-    &-active {
-        transform: scaleY(1);
-     }
+  position: absolute;
+  top: -1px;
+  left: 324px;
+  z-index: -1;
+  background-color: #fff;
+  width: 340px;
+  height: 100%;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  padding-left: 32px;
+  padding-top: 32px;
+  padding-right: 38px;
+  padding-bottom: 32px;
+  transform-origin: center top;
+  display: block;
+  overflow: auto;
+  opacity: 0;
 
-    &-title {
-        transition: color 0.4s ease;
-        font-weight: 700;
-        margin-bottom: 12px;
-        text-decoration: none;
-        color: black;
-        display: block;
+  &-active {
+    z-index: 10;
+    opacity: 1;
+  }
 
-        &:hover {
-            color: #EB5757;
-        }
+  &-title {
+    transition: color 0.4s ease;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-decoration: none;
+    color: black;
+    display: block;
+
+    &:hover {
+      color: #eb5757;
     }
+  }
 
-    &-text {
-        margin-bottom: 12px;
-        transition: color 0.4s ease;
-        text-decoration: none;
-        color: black;
-        display: block;
-        &:hover {
-            color: #EB5757;
-        }
+  &-text {
+    margin-bottom: 12px;
+    transition: color 0.4s ease;
+    text-decoration: none;
+    color: black;
+    display: block;
+    &:hover {
+      color: #eb5757;
     }
+  }
+}
 
+.catalog-desktop-slide_content {
+  top: 0;
+  left: 319px;
 }
 
 .catalog-desktop-slide_menu-item {
-    .catalog-desktop-slide_menu-item {
-     
+  .catalog-desktop-slide_menu-item {
   }
   .catalog-desktop-slide_menu-link {
+    position: relative;
+    z-index: 11;
     width: 100%;
-     
-    display: flex;
-  
-    align-items: center;
-      padding: 12px 15px;
-      background-color: #fff;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;
-      color: #000;
-      text-decoration: none;
-      border-bottom: 1px solid #e0e0e0;
-      border-left: 1px solid #e0e0e0;
-    
-      &:first-child {
-          border-top: 1px solid #e0e0e0;
-      }
-  }
-  }
 
-  .catalog-desktop-slide_menu-link:hover {
-    color: #333;
-    background: #f2f2f2;
+    display: flex;
+
+    align-items: center;
+    padding: 12px 15px;
+    padding-right: 35px;
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+
+    &:first-child {
+      border-top: 1px solid #e0e0e0;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 12px;
+      width: 6px;
+      height: 6px;
+      background: center/contain url(../img/angl.svg) no-repeat;
+      transition: transform 0.2s linear;
+    }
+  }
+}
+
+.catalog-desktop-slide_menu-link:hover {
+  color: #333;
+  background: #f2f2f2;
 }
