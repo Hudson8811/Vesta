@@ -53,10 +53,12 @@
         &:not(:nth-child(3n)) {
             border-right: none;
         }
-       
         @include for-tablet {
             width: 50%;
+            border: 1px solid #E0E0E0!important;
+            
         }
+       
         @include for-mobile {
             width: 100%;
             padding: 10px;
@@ -613,4 +615,8 @@
 
 .number-of-cameras {
     padding: 12px 18px;
+}
+
+.slick-catalog-wrapper {
+    position: relative;
 }
