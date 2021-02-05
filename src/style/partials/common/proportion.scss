@@ -7,13 +7,51 @@
     
     &__subtitle {
         margin-bottom: 12px;
+        display: flex;
+        align-items: center;
     }
     
     &__filters {
         display: flex;
         flex-wrap: wrap;
     }
-    
+    &__custom-checkbox {
+        position: relative;
+        input {
+            display: none;
+
+            &:checked + span:after {
+                content: "";
+                position: absolute;
+                left: 14px;
+                width: 20px;
+                height: 20px;
+                background: url("../img/check.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: auto;
+            }
+        }
+        span {
+            display: flex;
+            align-items: center;
+            margin-left: 14px;
+
+
+            &:before {
+                content: "";
+                position: static;
+                display: block;
+                width: 20px;
+                height: 20px;
+                border:1px solid #BDBDBD;
+                box-sizing: border-box;
+                margin-right: 12px;
+            }
+        }
+        
+        
+    }
     &__filter {
         position: relative;
         cursor: pointer;
@@ -38,4 +76,3 @@
         }
     }
 }
-    
