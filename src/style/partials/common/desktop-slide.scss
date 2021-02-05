@@ -10,13 +10,15 @@
     width: 100%;
     display: flex;
     align-items: center;
+    background-color: #fff;
+  
 }
 .descktop-slide_menu-img {
     margin-right: 8px;
 }
 
-.desktop-slide_menu-item {
-
+.desktop-slide_menu-item:hover ~ .desktop-slide_content{
+    transform: scaleY(1);
 }
 
 .desktop-slide_menu-link-active {

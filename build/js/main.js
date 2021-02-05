@@ -131,17 +131,17 @@ $('.mobile-burger').click(function(e){
     $('.mobile-catalog-btn').removeClass('mobile-catalog-btn-active')
 })
 
-$('.desktop-slide_menu-link').click(function(e){
-    e.preventDefault();
-    $('.desktop-slide_menu-link').removeClass('desktop-slide_menu-link-active')
-    $(this).toggleClass('desktop-slide_menu-link-active')
-    if ($('.desktop-slide_content').hasClass('desktop-slide_content-active')) {
-        $('.desktop-slide_content').removeClass('desktop-slide_content-active')
-    } else {
-        $('.desktop-slide_content').addClass('desktop-slide_content-active')
-        console.log('работает')
-    }
-})
+// $('.desktop-slide_menu-link').click(function(e){
+//     e.preventDefault();
+//     $('.desktop-slide_menu-link').removeClass('desktop-slide_menu-link-active')
+//     $(this).toggleClass('desktop-slide_menu-link-active')
+//     if ($('.desktop-slide_content').hasClass('desktop-slide_content-active')) {
+//         $('.desktop-slide_content').removeClass('desktop-slide_content-active')
+//     } else {
+//         $('.desktop-slide_content').addClass('desktop-slide_content-active')
+//         console.log('работает')
+//     }
+// })
 
 $('.filter-mobile').click(function(e){
     e.preventDefault();
