@@ -147,19 +147,21 @@
                                             <div class="catalog__brand-wrapper">
                                                 <label class="catalog__brand-label">
                                                     <input class="catalog__brand-radio" name="3" type="radio">
-                                                    <span class="catalog__brand-castom-radio">Неважно</span>
+                                                    <span
+                                                        class="catalog__brand-castom-radio catalog_never-mind">Неважно</span>
                                                 </label>
                                                 <label class="catalog__brand-label">
                                                     <input class="catalog__brand-radio" name="3" type="radio">
-                                                    <span class="catalog__brand-castom-radio">1</span>
+                                                    <span class="catalog__brand-castom-radio 
+                                                    number-of-cameras">1</span>
                                                 </label>
                                                 <label class="catalog__brand-label">
                                                     <input class="catalog__brand-radio" name="3" type="radio">
-                                                    <span class="catalog__brand-castom-radio">2</span>
+                                                    <span class="catalog__brand-castom-radio number-of-cameras">2</span>
                                                 </label>
                                                 <label class="catalog__brand-label">
                                                     <input class="catalog__brand-radio" name="3" type="radio">
-                                                    <span class="catalog__brand-castom-radio">3</span>
+                                                    <span class="catalog__brand-castom-radio number-of-cameras">3</span>
                                                 </label>
                                             </div>
                                         </div>
@@ -194,6 +196,7 @@
                                         </select>
                                     </div>
                                 </div>
+
                                 <div class="catalog__proportion proportion">
                                     <div class="proportion__subtitle">Размеры, см
                                         <label for="">
@@ -277,17 +280,18 @@
                                         <div class="proportion__filter"></div>
                                     </div>
                                 </div>
-                                <div class="catalog__sort">
-                                    <div class="catalog__sort-subtitle">Сортировать по:
-                                        <label class="catalog__sort-label">
-                                            <input type="checkbox">
-                                            <span>по цене</span>
-                                        </label>
-                                        <label class="catalog__sort-label">
-                                            <input type="checkbox">
-                                            <span>по скидке</span>
-                                        </label>
-                                    </div>
+                            </div>
+
+                            <div class="catalog__sort">
+                                <div class="catalog__sort-subtitle">Сортировать по:
+                                    <label class="catalog__sort-label">
+                                        <input type="checkbox">
+                                        <span>по цене</span>
+                                    </label>
+                                    <label class="catalog__sort-label">
+                                        <input type="checkbox">
+                                        <span>по скидке</span>
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -297,8 +301,19 @@
                             <div class="catalog__row">
                                 <div class="catalog__card">
                                     <div class="catalog__card-interface">
-                                        <img class="catalog__favourite" src="img/favourite.svg" alt="">
-                                        <img class="catalog__sravnit" src="img/sravnit.svg" alt="">
+                                        <div class="catalog__card-tooltip catalog__card-tooltip-favourite">
+                                            <div class="catalog__favourite-wrapper">
+                                                <img class="catalog__favourite" src="img/favourite.svg" alt="">
+                                            </div>
+                                            <div class="catalog__card-popup catalog__card-popup-favourite">Добавить в
+                                                избранное
+                                            </div>
+                                        </div>
+                                        <div class="catalog__card-tooltip">
+                                            <img class="catalog__sravnit" src="img/sravnit.svg" alt="">
+                                            <div class="catalog__card-popup catalog__card-popup-sravnit">Добавить в
+                                                сравнение</div>
+                                        </div>
                                     </div>
                                     <div class="catalog__card-img-wrapper slick-catalog">
                                         <div class="click-item"><img src="img/item.png" class="catalog__card-img"

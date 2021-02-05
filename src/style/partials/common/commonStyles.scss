@@ -638,3 +638,11 @@ body {
   }
 
 }
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted:after {
+  display: none;
+}
+
+@media (min-width: 640px) {.choices__list--dropdown .choices__item--selectable {
+  padding-right: 0 ;
+}}
