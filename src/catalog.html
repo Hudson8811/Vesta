@@ -16,63 +16,63 @@
         <section class="catalog">
             <div class="container">
                 <ul class="catalog__nav">
-                    <li class="catalog__nav-item">Главная </li>
-                    <li class="catalog__nav-item">Каталог</li>
-                    <li class="catalog__nav-item">Мансардные окна</li>
+                    <li class="catalog__nav-item"><a href="#">Главная</a> </li>
+                    <li class="catalog__nav-item"><a href="#">Каталог</a></li>
+                    <li class="catalog__nav-item"><a href="#">Мансардные окна</a></li>
                 </ul>
                 <div class="catalog__title">Мансардные окна</div>
                 <div class="catalog__content-wrapper">
                     <div class="catalog__column-left">
-                        <ul class="desktop-slide_menu catalog__left-menu catalog__menu">
-                            <li class="desktop-slide_menu-item">
-                                <a href="#" class="desktop-slide_menu-link">
+                        <ul class="catalog-desktop-slide_menu catalog__left-menu catalog__menu">
+                            <li class="catalog-desktop-slide_menu-item">
+                                <a href="#" class="catalog-desktop-slide_menu-link">
                                     <img src="img/icon-menu1.svg" alt="" class="descktop-slide_menu-img">
                                     Мансардные окна</a>
                             </li>
-                            <li class="desktop-slide_menu-item">
-                                <a href="#" class="desktop-slide_menu-link">
+                            <li class="catalog-desktop-slide_menu-item">
+                                <a href="#" class="catalog-desktop-slide_menu-link">
                                     <img src="img/icon-menu2.svg" alt="" class="descktop-slide_menu-img">
                                     Аксессуары для мансардных окон
                                 </a>
                             </li>
-                            <li class="desktop-slide_menu-item">
-                                <a href="#" class="desktop-slide_menu-link">
+                            <li class="catalog-desktop-slide_menu-item">
+                                <a href="#" class="catalog-desktop-slide_menu-link">
                                     <img src="img/icon-menu3.svg" alt="" class="descktop-slide_menu-img">
                                     Чердачные лестницы
                                 </a>
                             </li>
-                            <li class="desktop-slide_menu-item">
-                                <a href="#" class="desktop-slide_menu-link">
+                            <li class="catalog-desktop-slide_menu-item">
+                                <a href="#" class="catalog-desktop-slide_menu-link">
                                     <img src="img/icon-menu4.svg" alt="" class="descktop-slide_menu-img">
                                     Аксессуары для чердачных лестниц
                                 </a>
                             </li>
-                            <li class="desktop-slide_menu-item">
-                                <a href="#" class="desktop-slide_menu-link">
+                            <li class="catalog-desktop-slide_menu-item">
+                                <a href="#" class="catalog-desktop-slide_menu-link">
                                     <img src="img/icon-menu5.svg" alt="" class="descktop-slide_menu-img">
                                     Дополнительные аксессуары для кровли и мансарды
                                 </a>
                             </li>
-                            <li class="desktop-slide_menu-item">
-                                <a href="#" class="desktop-slide_menu-link">
+                            <li class="catalog-desktop-slide_menu-item">
+                                <a href="#" class="catalog-desktop-slide_menu-link">
                                     <img src="img/icon-menu6.svg" alt="" class="descktop-slide_menu-img">
                                     Карнизные окна, окна-надставки и увеличивающие сегменты
                                 </a>
                             </li>
-                            <li class="desktop-slide_menu-item">
-                                <a href="#" class="desktop-slide_menu-link">
+                            <li class="catalog-desktop-slide_menu-item">
+                                <a href="#" class="catalog-desktop-slide_menu-link">
                                     <img src="img/icon-menu7.svg" alt="" class="descktop-slide_menu-img">
                                     Сервисные и эвакуационные окна и люки для выхода на крышу
                                 </a>
                             </li>
-                            <li class="desktop-slide_menu-item">
-                                <a href="#" class="desktop-slide_menu-link">
+                            <li class="catalog-desktop-slide_menu-item">
+                                <a href="#" class="catalog-desktop-slide_menu-link">
                                     <img src="img/icon-menu8.svg" alt="" class="descktop-slide_menu-img">
                                     Эркеры, балконы, террасы, комбинированные решения
                                 </a>
                             </li>
-                            <li class="desktop-slide_menu-item">
-                                <a href="#" class="desktop-slide_menu-link">
+                            <li class="catalog-desktop-slide_menu-item">
+                                <a href="#" class="catalog-desktop-slide_menu-link">
                                     <img src="img/icon-menu9.svg" alt="" class="descktop-slide_menu-img">
                                     Оклады и комплектующие для монтажа мансардных окон
                                 </a>
@@ -93,7 +93,7 @@
                     </div>
                     <div class="catalog__column-right">
                         <a href="#" class="filter-mobile">
-                            фильтры
+                            <img src="img/filter.svg" alt="">фильтры
                         </a>
                         <div class="catalog__panel-wrapper">
                             <div class="catalog__panel">
@@ -296,6 +296,10 @@
                         <div class="catalog__content">
                             <div class="catalog__row">
                                 <div class="catalog__card">
+                                    <div class="catalog__card-interface">
+                                        <img class="catalog__favourite" src="img/favourite.svg" alt="">
+                                        <img class="catalog__sravnit" src="img/sravnit.svg" alt="">
+                                    </div>
                                     <div class="catalog__card-img-wrapper slick-catalog">
                                         <div class="click-item"><img src="img/item.png" class="catalog__card-img"
                                                 style=" height: 256px;">
@@ -339,26 +343,35 @@
                                     </div>
                                     <div class="catalog__properties-wrapper">
                                         <div class="catalog__properties-title">Материал</div>
-                                        <div class="catalog__properties-decor-one"></div>
-                                        <div class="catalog__properties-desc">дерево</div>
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-one"></div>
+                                            дерево
+                                        </div>
                                     </div>
                                     <div class="catalog__properties-wrapper">
-                                        <div class="catalog__properties-title">Тип открывания</div>
-                                        <div class="catalog__properties-decor-2"></div>
+                                        <div class="catalog__properties-title">
+                                            Тип открывания</div>
 
-                                        <div class="catalog__properties-desc">среднеповоротный </div>
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-2"></div>
+                                            среднеповоротный
+                                        </div>
                                     </div>
                                     <div class="catalog__properties-wrapper">
                                         <div class="catalog__properties-title">Положение ручки</div>
-                                        <div class="catalog__properties-decor-3"></div>
 
-                                        <div class="catalog__properties-desc">снизу</div>
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-3"></div>
+                                            снизу
+                                        </div>
                                     </div>
                                     <div class="catalog__properties-wrapper">
                                         <div class="catalog__properties-title">Стеклопакет</div>
-                                        <div class="catalog__properties-decor-4"></div>
 
-                                        <div class="catalog__properties-desc">2- камерный</div>
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-4"></div>
+                                            2- камерный
+                                        </div>
                                     </div>
                                     <div class="catalog__filters">
                                         <div class="catalog__filter">Внутреннее стекло «Триплекс»</div>
@@ -414,19 +427,35 @@
                                     </div>
                                     <div class="catalog__properties-wrapper">
                                         <div class="catalog__properties-title">Материал</div>
-                                        <div class="catalog__properties-desc">дерево</div>
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-one"></div>
+                                            дерево
+                                        </div>
                                     </div>
                                     <div class="catalog__properties-wrapper">
-                                        <div class="catalog__properties-title">Тип открывания</div>
-                                        <div class="catalog__properties-desc">среднеповоротный </div>
+                                        <div class="catalog__properties-title">
+                                            Тип открывания</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-2"></div>
+                                            среднеповоротный
+                                        </div>
                                     </div>
                                     <div class="catalog__properties-wrapper">
                                         <div class="catalog__properties-title">Положение ручки</div>
-                                        <div class="catalog__properties-desc">снизу</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-3"></div>
+                                            снизу
+                                        </div>
                                     </div>
                                     <div class="catalog__properties-wrapper">
                                         <div class="catalog__properties-title">Стеклопакет</div>
-                                        <div class="catalog__properties-desc">2- камерный</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-4"></div>
+                                            2- камерный
+                                        </div>
                                     </div>
                                     <div class="catalog__filters">
                                         <div class="catalog__filter">Внутреннее стекло «Триплекс»</div>
@@ -479,19 +508,35 @@
                                     </div>
                                     <div class="catalog__properties-wrapper">
                                         <div class="catalog__properties-title">Материал</div>
-                                        <div class="catalog__properties-desc">дерево</div>
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-one"></div>
+                                            дерево
+                                        </div>
                                     </div>
                                     <div class="catalog__properties-wrapper">
-                                        <div class="catalog__properties-title">Тип открывания</div>
-                                        <div class="catalog__properties-desc">среднеповоротный </div>
+                                        <div class="catalog__properties-title">
+                                            Тип открывания</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-2"></div>
+                                            среднеповоротный
+                                        </div>
                                     </div>
                                     <div class="catalog__properties-wrapper">
                                         <div class="catalog__properties-title">Положение ручки</div>
-                                        <div class="catalog__properties-desc">снизу</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-3"></div>
+                                            снизу
+                                        </div>
                                     </div>
                                     <div class="catalog__properties-wrapper">
                                         <div class="catalog__properties-title">Стеклопакет</div>
-                                        <div class="catalog__properties-desc">2- камерный</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-4"></div>
+                                            2- камерный
+                                        </div>
                                     </div>
                                     <div class="catalog__filters">
                                         <div class="catalog__filter">Внутреннее стекло «Триплекс»</div>
@@ -544,19 +589,35 @@
                                     </div>
                                     <div class="catalog__properties-wrapper">
                                         <div class="catalog__properties-title">Материал</div>
-                                        <div class="catalog__properties-desc">дерево</div>
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-one"></div>
+                                            дерево
+                                        </div>
                                     </div>
                                     <div class="catalog__properties-wrapper">
-                                        <div class="catalog__properties-title">Тип открывания</div>
-                                        <div class="catalog__properties-desc">среднеповоротный </div>
+                                        <div class="catalog__properties-title">
+                                            Тип открывания</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-2"></div>
+                                            среднеповоротный
+                                        </div>
                                     </div>
                                     <div class="catalog__properties-wrapper">
                                         <div class="catalog__properties-title">Положение ручки</div>
-                                        <div class="catalog__properties-desc">снизу</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-3"></div>
+                                            снизу
+                                        </div>
                                     </div>
                                     <div class="catalog__properties-wrapper">
                                         <div class="catalog__properties-title">Стеклопакет</div>
-                                        <div class="catalog__properties-desc">2- камерный</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-4"></div>
+                                            2- камерный
+                                        </div>
                                     </div>
                                     <div class="catalog__filters">
                                         <div class="catalog__filter">Внутреннее стекло «Триплекс»</div>
@@ -609,19 +670,35 @@
                                     </div>
                                     <div class="catalog__properties-wrapper">
                                         <div class="catalog__properties-title">Материал</div>
-                                        <div class="catalog__properties-desc">дерево</div>
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-one"></div>
+                                            дерево
+                                        </div>
                                     </div>
                                     <div class="catalog__properties-wrapper">
-                                        <div class="catalog__properties-title">Тип открывания</div>
-                                        <div class="catalog__properties-desc">среднеповоротный </div>
+                                        <div class="catalog__properties-title">
+                                            Тип открывания</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-2"></div>
+                                            среднеповоротный
+                                        </div>
                                     </div>
                                     <div class="catalog__properties-wrapper">
                                         <div class="catalog__properties-title">Положение ручки</div>
-                                        <div class="catalog__properties-desc">снизу</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-3"></div>
+                                            снизу
+                                        </div>
                                     </div>
                                     <div class="catalog__properties-wrapper">
                                         <div class="catalog__properties-title">Стеклопакет</div>
-                                        <div class="catalog__properties-desc">2- камерный</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-4"></div>
+                                            2- камерный
+                                        </div>
                                     </div>
                                     <div class="catalog__filters">
                                         <div class="catalog__filter">Внутреннее стекло «Триплекс»</div>
@@ -674,19 +751,524 @@
                                     </div>
                                     <div class="catalog__properties-wrapper">
                                         <div class="catalog__properties-title">Материал</div>
-                                        <div class="catalog__properties-desc">дерево</div>
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-one"></div>
+                                            дерево
+                                        </div>
                                     </div>
                                     <div class="catalog__properties-wrapper">
-                                        <div class="catalog__properties-title">Тип открывания</div>
-                                        <div class="catalog__properties-desc">среднеповоротный </div>
+                                        <div class="catalog__properties-title">
+                                            Тип открывания</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-2"></div>
+                                            среднеповоротный
+                                        </div>
                                     </div>
                                     <div class="catalog__properties-wrapper">
                                         <div class="catalog__properties-title">Положение ручки</div>
-                                        <div class="catalog__properties-desc">снизу</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-3"></div>
+                                            снизу
+                                        </div>
                                     </div>
                                     <div class="catalog__properties-wrapper">
                                         <div class="catalog__properties-title">Стеклопакет</div>
-                                        <div class="catalog__properties-desc">2- камерный</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-4"></div>
+                                            2- камерный
+                                        </div>
+                                    </div>
+                                    <div class="catalog__filters">
+                                        <div class="catalog__filter">Внутреннее стекло «Триплекс»</div>
+                                        <div class="catalog__filter">Утепленные</div>
+                                        <div class="catalog__filter">Для влажных помещений</div>
+                                    </div>
+                                    <button class="catalog__button">В корзину</button>
+                                </div>
+                                <div class="catalog__card">
+                                    <div class="catalog__card-img-wrapper slick-catalog">
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__card-content">
+                                        <h4 class="catalog__card-title">Окно мансардное Fakro Standart, FTS-V U4
+                                        </h4>
+                                        <div class="catalog__check-price">
+                                            <select name="" id="" class="select-custom4">
+                                                <option value="">ghbd</option>
+                                                <option value="">ghbd</option>
+                                                <option value="">ghbd</option>
+                                            </select>
+                                            <div class="catalog__price">
+                                                <bold>142 000</bold> руб./шт
+                                            </div>
+                                        </div>
+                                        <div class="catalog__card-desc">Базовое двухкамерное окно для
+                                            отапливаемых
+                                            помещений,
+                                            без
+                                            дополнительных эл-тов, для людей с нормальными потребностями</div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">Материал</div>
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-one"></div>
+                                            дерево
+                                        </div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">
+                                            Тип открывания</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-2"></div>
+                                            среднеповоротный
+                                        </div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">Положение ручки</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-3"></div>
+                                            снизу
+                                        </div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">Стеклопакет</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-4"></div>
+                                            2- камерный
+                                        </div>
+                                    </div>
+                                    <div class="catalog__filters">
+                                        <div class="catalog__filter">Внутреннее стекло «Триплекс»</div>
+                                        <div class="catalog__filter">Утепленные</div>
+                                        <div class="catalog__filter">Для влажных помещений</div>
+                                    </div>
+                                    <button class="catalog__button-active">
+                                        <div>В корзинe n.шт</div>
+                                        <span>+1 шт.</span>
+                                    </button>
+                                </div>
+                                <div class="catalog__card">
+                                    <div class="catalog__card-img-wrapper slick-catalog">
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__card-content">
+                                        <h4 class="catalog__card-title">Окно мансардное Fakro Standart, FTS-V U4
+                                        </h4>
+                                        <div class="catalog__check-price">
+                                            <select name="" id="" class="select-custom5">
+                                                <option value="">ghbd</option>
+                                                <option value="">ghbd</option>
+                                                <option value="">ghbd</option>
+                                            </select>
+                                            <div class="catalog__price">
+                                                <bold>142 000</bold> руб./шт
+                                            </div>
+                                        </div>
+                                        <div class="catalog__card-desc">Базовое двухкамерное окно для
+                                            отапливаемых
+                                            помещений,
+                                            без
+                                            дополнительных эл-тов, для людей с нормальными потребностями</div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">Материал</div>
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-one"></div>
+                                            дерево
+                                        </div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">
+                                            Тип открывания</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-2"></div>
+                                            среднеповоротный
+                                        </div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">Положение ручки</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-3"></div>
+                                            снизу
+                                        </div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">Стеклопакет</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-4"></div>
+                                            2- камерный
+                                        </div>
+                                    </div>
+                                    <div class="catalog__filters">
+                                        <div class="catalog__filter">Внутреннее стекло «Триплекс»</div>
+                                        <div class="catalog__filter">Утепленные</div>
+                                        <div class="catalog__filter">Для влажных помещений</div>
+                                    </div>
+                                    <button class="catalog__button">В корзину</button>
+                                </div>
+                                <div class="catalog__card">
+                                    <div class="catalog__card-img-wrapper slick-catalog">
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__card-content">
+                                        <h4 class="catalog__card-title">Окно мансардное Fakro Standart, FTS-V U4
+                                        </h4>
+                                        <div class="catalog__check-price">
+                                            <select name="" id="" class="select-custom6">
+                                                <option value="">ghbd</option>
+                                                <option value="">ghbd</option>
+                                                <option value="">ghbd</option>
+                                            </select>
+                                            <div class="catalog__price">
+                                                <bold>142 000</bold> руб./шт
+                                            </div>
+                                        </div>
+                                        <div class="catalog__card-desc">Базовое двухкамерное окно для
+                                            отапливаемых
+                                            помещений,
+                                            без
+                                            дополнительных эл-тов, для людей с нормальными потребностями</div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">Материал</div>
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-one"></div>
+                                            дерево
+                                        </div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">
+                                            Тип открывания</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-2"></div>
+                                            среднеповоротный
+                                        </div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">Положение ручки</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-3"></div>
+                                            снизу
+                                        </div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">Стеклопакет</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-4"></div>
+                                            2- камерный
+                                        </div>
+                                    </div>
+                                    <div class="catalog__filters">
+                                        <div class="catalog__filter">Внутреннее стекло «Триплекс»</div>
+                                        <div class="catalog__filter">Утепленные</div>
+                                        <div class="catalog__filter">Для влажных помещений</div>
+                                    </div>
+                                    <button class="catalog__button">В корзину</button>
+                                </div>
+                                <div class="catalog__card">
+                                    <div class="catalog__card-img-wrapper slick-catalog">
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__card-content">
+                                        <h4 class="catalog__card-title">Окно мансардное Fakro Standart, FTS-V U4
+                                        </h4>
+                                        <div class="catalog__check-price">
+                                            <select name="" id="" class="select-custom7">
+                                                <option value="">ghbd</option>
+                                                <option value="">ghbd</option>
+                                                <option value="">ghbd</option>
+                                            </select>
+                                            <div class="catalog__price">
+                                                <bold>142 000</bold> руб./шт
+                                            </div>
+                                        </div>
+                                        <div class="catalog__card-desc">Базовое двухкамерное окно для
+                                            отапливаемых
+                                            помещений,
+                                            без
+                                            дополнительных эл-тов, для людей с нормальными потребностями</div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">Материал</div>
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-one"></div>
+                                            дерево
+                                        </div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">
+                                            Тип открывания</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-2"></div>
+                                            среднеповоротный
+                                        </div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">Положение ручки</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-3"></div>
+                                            снизу
+                                        </div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">Стеклопакет</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-4"></div>
+                                            2- камерный
+                                        </div>
+                                    </div>
+                                    <div class="catalog__filters">
+                                        <div class="catalog__filter">Внутреннее стекло «Триплекс»</div>
+                                        <div class="catalog__filter">Утепленные</div>
+                                        <div class="catalog__filter">Для влажных помещений</div>
+                                    </div>
+                                    <button class="catalog__button">В корзину</button>
+                                </div>
+                                <div class="catalog__card">
+                                    <div class="catalog__card-img-wrapper slick-catalog">
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__card-content">
+                                        <h4 class="catalog__card-title">Окно мансардное Fakro Standart, FTS-V U4
+                                        </h4>
+                                        <div class="catalog__check-price">
+                                            <select name="" id="" class="select-custom8">
+                                                <option value="">ghbd</option>
+                                                <option value="">ghbd</option>
+                                                <option value="">ghbd</option>
+                                            </select>
+                                            <div class="catalog__price">
+                                                <bold>142 000</bold> руб./шт
+                                            </div>
+                                        </div>
+                                        <div class="catalog__card-desc">Базовое двухкамерное окно для
+                                            отапливаемых
+                                            помещений,
+                                            без
+                                            дополнительных эл-тов, для людей с нормальными потребностями</div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">Материал</div>
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-one"></div>
+                                            дерево
+                                        </div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">
+                                            Тип открывания</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-2"></div>
+                                            среднеповоротный
+                                        </div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">Положение ручки</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-3"></div>
+                                            снизу
+                                        </div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">Стеклопакет</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-4"></div>
+                                            2- камерный
+                                        </div>
+                                    </div>
+                                    <div class="catalog__filters">
+                                        <div class="catalog__filter">Внутреннее стекло «Триплекс»</div>
+                                        <div class="catalog__filter">Утепленные</div>
+                                        <div class="catalog__filter">Для влажных помещений</div>
+                                    </div>
+                                    <button class="catalog__button">В корзину</button>
+                                </div>
+                                <div class="catalog__card">
+                                    <div class="catalog__card-img-wrapper slick-catalog">
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img"
+                                                style=" height: 256px;">
+                                            <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
+                                            <div class="slick-catalog-share">-20%</div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__card-content">
+                                        <h4 class="catalog__card-title">Окно мансардное Fakro Standart, FTS-V U4
+                                        </h4>
+                                        <div class="catalog__check-price">
+                                            <select name="" id="" class="select-custom9">
+                                                <option value="">ghbd</option>
+                                                <option value="">ghbd</option>
+                                                <option value="">ghbd</option>
+                                            </select>
+                                            <div class="catalog__price">
+                                                <bold>142 000</bold> руб./шт
+                                            </div>
+                                        </div>
+                                        <div class="catalog__card-desc">Базовое двухкамерное окно для
+                                            отапливаемых
+                                            помещений,
+                                            без
+                                            дополнительных эл-тов, для людей с нормальными потребностями</div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">Материал</div>
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-one"></div>
+                                            дерево
+                                        </div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">
+                                            Тип открывания</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-2"></div>
+                                            среднеповоротный
+                                        </div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">Положение ручки</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-3"></div>
+                                            снизу
+                                        </div>
+                                    </div>
+                                    <div class="catalog__properties-wrapper">
+                                        <div class="catalog__properties-title">Стеклопакет</div>
+
+                                        <div class="catalog__properties-desc">
+                                            <div class="catalog__properties-decor-4"></div>
+                                            2- камерный
+                                        </div>
                                     </div>
                                     <div class="catalog__filters">
                                         <div class="catalog__filter">Внутреннее стекло «Триплекс»</div>

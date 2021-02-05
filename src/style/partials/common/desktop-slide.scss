@@ -70,3 +70,33 @@
 
 }
 
+.catalog-desktop-slide_menu-item {
+    .catalog-desktop-slide_menu-item {
+     
+  }
+  .catalog-desktop-slide_menu-link {
+    width: 100%;
+     
+    display: flex;
+  
+    align-items: center;
+      padding: 12px 15px;
+      background-color: #fff;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #000;
+      text-decoration: none;
+      border-bottom: 1px solid #e0e0e0;
+      border-left: 1px solid #e0e0e0;
+    
+      &:first-child {
+          border-top: 1px solid #e0e0e0;
+      }
+  }
+  }
+
+  .catalog-desktop-slide_menu-link:hover {
+    color: #333;
+    background: #f2f2f2;
+}

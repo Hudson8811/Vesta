@@ -40,6 +40,7 @@
         position: relative;
     }
     &__card {
+        position: relative;
         width: 33.3%;
         padding: 24px;
         border: 1px solid #E0E0E0;
@@ -51,7 +52,20 @@
             padding: 10px;
         }
     }
-    
+    &__card-interface {
+        position: absolute;
+        right: 28px;
+        top:28px;
+        display: flex;
+        z-index: 3;
+    }
+    &__favourite {
+        margin-right: 5px;
+
+    }
+    &__sravnit {
+    }
+        
     &__card-img {
         max-width: 256px;
         width: 100%;
@@ -137,6 +151,7 @@
     &__properties-wrapper {
         display: flex;
         position: relative;
+        justify-content: space-between;
         &:last-child {
             margin-bottom: 20px;
         }
@@ -144,24 +159,29 @@
 
     &__properties-decor {
         &-one {
-            width: 25%;
+            max-width: 62px;
+            width: 100%;
             border-bottom: 1px dotted #828282;
-
+        
         }
         &-2 {
-            width: 8%;
+            max-width: 20px;
+            width: 100%;
             border-bottom: 1px dotted #828282;
-
+          
         }
         &-3 {
-            width: 4%;
+            max-width: 11px;
+            width: 100%;
             border-bottom: 1px dotted #828282;
+          
 
         }
         &-4 {
-            width: 18%;
+            max-width: 46px;
+            width: 100%;
             border-bottom: 1px dotted #828282;
-
+           
         }
     }
     
@@ -170,14 +190,17 @@
         font-size: 13px;
         line-height: 18px;
         color: #828282;
+        flex: 0 0 auto;
     }
     
     &__properties-desc {
+        display: flex;
         font-weight: 300;
         font-size: 13px;
         line-height: 18px;
         color: #000000;
-
+        flex: 1 1 auto;
+        
     }
     
     &__filters {
@@ -203,6 +226,10 @@
         padding: 10px 0;
         border: none;
         cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            background: #D73535;
+        }
         &-active {
             width: 100%;
             display: flex;
@@ -218,7 +245,11 @@
                 border-left: none;
                 border-radius: 0 3px 3px 0;
                 font-weight: 500;
-
+                transition: 0.3s;
+                &:hover {
+                    background: #EB5757;
+                    color: #fff;
+                }
             }
             div {
                 width: 70%;
@@ -229,6 +260,11 @@
                 border: none;
                 cursor: pointer;
                 border-radius: 3px 0 0 3px;
+                transition: 0.3s;
+                &:hover {
+                    background: #D73535;
+
+                }
             }
         }
         
@@ -434,7 +470,7 @@
      .filter-mobile {
         display: none;
         padding: 12px 22px;
-        border: 1px solid black;
+        border: 1px solid #e0e0e0;
         align-items: center;
         @include for-mobile {
             display: inline-flex;
