@@ -140,9 +140,6 @@ $('.desktop-slide_menu-link').hover(function(e){
         $('.desktop-slide_content').removeClass('desktop-slide_content-active');
         $this.addClass('desktop-slide_menu-link-active');
         $(`.desktop-slide_content[data-id="${id}"]`).addClass('desktop-slide_content-active');
-    } else{
-        $this.removeClass('desktop-slide_menu-link-active');
-        $(`.desktop-slide_content[data-id="${id}"]`).removeClass('desktop-slide_content-active');
     }
 });
 
@@ -155,13 +152,15 @@ $('.catalog-desktop-slide_menu-link').hover(function(e){
         $('.catalog-desktop-slide_content').removeClass('desktop-slide_content-active');
         $this.addClass('desktop-slide_menu-link-active');
         $(`.catalog-desktop-slide_content[data-id="${id}"]`).addClass('desktop-slide_content-active');
-    } else{
-        $this.removeClass('desktop-slide_menu-link-active');
-        $(`.catalog-desktop-slide_content[data-id="${id}"]`).removeClass('desktop-slide_content-active');
     }
 });
 
-$('.desktop-slide_content, .desktop-slide_menu-link-active').mouseleave(function(){
+$('.desktop-slide_content, .desktop-slide_menu').mouseleave(function(){
+    $('.desktop-slide_menu-link').removeClass('desktop-slide_menu-link-active');
+    $('.desktop-slide_content').removeClass('desktop-slide_content-active');
+})
+
+$('.desktop-slide_content, .catalog__menu').mouseleave(function(){
     $('.catalog-desktop-slide_menu-link').removeClass('desktop-slide_menu-link-active');
     $('.catalog-desktop-slide_content').removeClass('desktop-slide_content-active');
 })

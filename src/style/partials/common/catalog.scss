@@ -1,6 +1,12 @@
 .catalog-page {
   overflow: hidden;
 
+  .desktop-slide_menu {
+    @media screen and (min-width: 1241px) {
+      display: none;
+    }
+  }
+
   .header-catalog_btn--hold {
     pointer-events: none;
 
