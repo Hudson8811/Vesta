@@ -128,3 +128,26 @@
   color: #333;
   background: #f2f2f2;
 }
+
+
+.slick-card {
+  padding: 0 13px;
+
+  .slick-item {
+    padding: 0 5px;
+  }
+
+  .slick-arrow {
+   
+    margin-top: -6px;
+   
+}
+
+.slick-arrow-next {
+  right: 6px;
+}
+
+.slick-arrow-prev {
+    left: 6px;
+}
+}

@@ -1,0 +1,21 @@
+.filters {
+   
+}
+.filter {
+    font-weight: 300;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 8px 12px;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    &:not(:last-child) {
+        margin-right: 5px;
+    }
+    &_red {
+        background: #EB5757;
+        color: #fff;
+    }
+}

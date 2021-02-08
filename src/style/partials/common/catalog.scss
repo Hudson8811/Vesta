@@ -349,22 +349,30 @@
     &-one {
       max-width: 62px;
       width: 100%;
-      border-bottom: 1px dotted #828282;
+      margin-right: 4px;
+      margin-left: 9px;
+      border-bottom: 1px dotted #bdbdbd;
     }
     &-2 {
       max-width: 20px;
       width: 100%;
-      border-bottom: 1px dotted #828282;
+      margin-right: 4px;
+      margin-left: 9px;
+      border-bottom: 1px dotted #bdbdbd;
     }
     &-3 {
       max-width: 11px;
       width: 100%;
-      border-bottom: 1px dotted #828282;
+      margin-right: 4px;
+      margin-left: 9px;
+      border-bottom: 1px dotted #bdbdbd;
     }
     &-4 {
       max-width: 46px;
       width: 100%;
-      border-bottom: 1px dotted #828282;
+      margin-right: 4px;
+      margin-left: 9px;
+      border-bottom: 1px dotted #bdbdbd;
     }
   }
 
@@ -664,7 +672,7 @@
     span::before {
       position: absolute;
       content: '';
-      border-top: dotted 2px black;
+      border-top: 1px dotted #bdbdbd;
       bottom: -5px;
       left: 0;
       right: 0;
@@ -676,7 +684,7 @@
         color: red;
       }
       &:checked + span::before {
-        border-top: dotted 2px red;
+        border-top: dotted 1px red;
       }
     }
   }

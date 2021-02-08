@@ -93,6 +93,35 @@
       opacity: 0.6;
       pointer-events: none;
     }
+
+    &_md {
+      position: relative;
+    cursor: pointer;
+    display: inline-flex;
+    margin-bottom: 6px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    span {
+      display: inline-flex;
+      padding: 8px 20px;
+      border: 1px solid #e0e0e0;
+      border-radius: 3px;
+      transition: 0.4s;
+    }
+    input {
+      display: none;
+      &:checked + span {
+        border-color: #eb5757;
+      }
+    }
+
+    &.disabled {
+      opacity: 0.6;
+      pointer-events: none;
+    } 
+    }
   }
 }
 .choices__inner {

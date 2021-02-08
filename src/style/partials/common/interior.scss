@@ -1,0 +1,42 @@
+.interior {
+padding-top: 72px;
+    &__container {
+    }
+    
+    &__title {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+        margin-bottom: 36px;
+    }
+    
+    &__content {
+        display: flex;
+    }
+    
+    &__img-wrapper {
+
+        position: relative;
+        width: 33.33333%;
+        padding-top: (385/1240) * 100%;
+        &:not(:last-child) {
+            margin-right: 36px;
+        }
+    }
+    
+    &__img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: url('../img/interior.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+    
