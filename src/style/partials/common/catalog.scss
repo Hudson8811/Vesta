@@ -620,8 +620,8 @@
   }
 
   &__left-menu {
+    position: relative;
     margin-right: 0;
-    position: static;
     transform: none;
     @include for-desktop {
       display: none;
@@ -799,4 +799,37 @@
   opacity: 1;
   color: #828282;
   font-weight: 400;
+}
+
+.desktop-slide_content-links_block {
+  margin-top: 24px;
+
+  p {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #828282;
+  }
+
+  a {
+    display: block;
+    height: 46px;
+    width: 146px;
+
+    img {
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    & + a {
+      margin-top: 16px;
+    }
+  }
 }

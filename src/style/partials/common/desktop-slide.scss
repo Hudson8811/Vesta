@@ -43,10 +43,7 @@
   height: 100%;
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
-  padding-left: 32px;
-  padding-top: 32px;
-  padding-right: 38px;
-  padding-bottom: 32px;
+  padding: 32px;
   transform-origin: center top;
   display: block;
   overflow: auto;
@@ -60,7 +57,9 @@
   &-title {
     transition: color 0.4s ease;
     font-weight: 700;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 20px;
     text-decoration: none;
     color: black;
     display: block;
@@ -71,11 +70,17 @@
   }
 
   &-text {
-    margin-bottom: 12px;
+    margin-bottom: 22px;
     transition: color 0.4s ease;
     text-decoration: none;
     color: black;
     display: block;
+    padding-left: 17px;
+
+    & + .desktop-slide_content-title {
+      margin-top: 30px;
+    }
+
     &:hover {
       color: #eb5757;
     }
@@ -129,7 +134,6 @@
   background: #f2f2f2;
 }
 
-
 .slick-card {
   padding: 0 13px;
 
@@ -138,16 +142,14 @@
   }
 
   .slick-arrow {
-   
     margin-top: -6px;
-   
-}
+  }
 
-.slick-arrow-next {
-  right: 6px;
-}
+  .slick-arrow-next {
+    right: 6px;
+  }
 
-.slick-arrow-prev {
+  .slick-arrow-prev {
     left: 6px;
-}
+  }
 }
