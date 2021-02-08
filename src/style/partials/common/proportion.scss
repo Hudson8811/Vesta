@@ -4,7 +4,7 @@
 }
 .proportion {
   &__subtitle {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -16,6 +16,17 @@
   &__filters {
     display: flex;
     flex-wrap: wrap;
+
+    &:last-child {
+      margin-top: 8px;
+      .proportion__filter {
+        margin-right: 10px;
+
+        span {
+          padding: 11px 9px;
+        }
+      }
+    }
   }
   &__custom-checkbox {
     position: relative;
@@ -62,7 +73,11 @@
     }
     span {
       display: inline-flex;
-      padding: 8px 12px;
+      min-width: 76px;
+      font-weight: 300;
+      justify-content: center;
+      align-items: center;
+      padding: 8px;
       border: 1px solid #e0e0e0;
       border-radius: 3px;
       transition: 0.4s;
@@ -79,4 +94,7 @@
       pointer-events: none;
     }
   }
+}
+.choices__inner {
+  min-height: 43px;
 }

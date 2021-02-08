@@ -1,6 +1,10 @@
 .catalog-page {
   overflow: hidden;
 
+  .header {
+    box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.1);
+  }
+
   .desktop-slide_menu {
     @media screen and (min-width: 1241px) {
       display: none;
@@ -17,6 +21,17 @@
 }
 
 .catalog {
+  font-family: 'Open Sans', sans-serif;
+
+  .slick-dots {
+    bottom: -16px;
+
+    button {
+      width: 4px;
+      height: 4px;
+      margin: 0 4px;
+    }
+  }
   &__nav {
     display: flex;
     font-size: 14px;
@@ -69,7 +84,7 @@
   &__card {
     position: relative;
     width: 33.3333333%;
-    padding: 24px;
+    padding: 24px 20px;
     border: 1px solid #e0e0e0;
     border-bottom-width: 0;
     border-right-width: 0;
@@ -258,14 +273,14 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 4px;
+    margin-bottom: 7px;
   }
 
   &__check-price {
     display: flex;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     .choices {
       max-width: 106px;
       width: 100%;
@@ -281,7 +296,7 @@
     font-size: 14px;
     line-height: 32px;
     color: #4f4f4f;
-    padding-left: 10px;
+    padding-left: 16px;
 
     bold {
       font-weight: 900;
@@ -295,10 +310,10 @@
     font-size: 13px;
     line-height: 18px;
     color: #000000;
-    margin-bottom: 12px;
+    margin-bottom: 7px;
   }
   &__panel {
-    padding: 29px 30px 0px 30px;
+    padding: 25px 30px 12px 30px;
     transition: transform 0.2s linear;
     transform-origin: top center;
     border: 1px solid #e0e0e0;
@@ -327,9 +342,7 @@
     display: flex;
     position: relative;
     justify-content: space-between;
-    &:last-child {
-      margin-bottom: 20px;
-    }
+    margin-bottom: 9px;
   }
 
   &__properties-decor {
@@ -373,6 +386,7 @@
   }
 
   &__filters {
+    margin-top: 12px;
   }
 
   &__filter {
@@ -381,9 +395,6 @@
     background: #f2f2f2;
     border-radius: 3px;
     margin-bottom: 8px;
-    &:first-child {
-      margin-top: 10px;
-    }
   }
 
   &__button {
@@ -395,6 +406,7 @@
     border: none;
     cursor: pointer;
     transition: 0.3s;
+    margin-top: 8px;
     &:hover {
       background: #d73535;
     }
@@ -402,6 +414,7 @@
       width: 100%;
       display: flex;
       align-items: center;
+      margin-top: 8px;
       span {
         width: 30%;
         display: block;
@@ -444,12 +457,34 @@
   }
   &__choice-column {
     margin-bottom: 20px;
+    margin-right: auto;
   }
   &__glass-unit-column {
     margin-bottom: 20px;
+    margin-right: auto;
   }
   &__material-column {
-    margin-bottom: 20px;
+    margin-bottom: auto;
+
+    .catalog__brand-wrapper {
+      .catalog__brand-castom-radio {
+        padding: 12px 9px;
+      }
+
+      .catalog__brand-label {
+        &:first-child {
+          .catalog__brand-castom-radio {
+            padding: 12px 10px;
+          }
+        }
+
+        &:last-child {
+          .catalog__brand-castom-radio {
+            padding: 12px 7px;
+          }
+        }
+      }
+    }
   }
   &__brand-availability {
     display: flex;
@@ -466,7 +501,7 @@
     font-size: 14px;
     line-height: 24px;
     color: #000000;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
   }
 
   &__brand-label {
@@ -504,7 +539,7 @@
     width: 100%;
   }
   &__brand-castom-radio {
-    padding: 12px 11px;
+    padding: 12px 10px;
     border: 1px solid #e0e0e0;
     box-sizing: border-box;
     transition: 0.3s;
@@ -515,7 +550,7 @@
   }
 
   &__availability-title {
-    margin-bottom: 19px;
+    margin-bottom: 14px;
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
@@ -609,14 +644,14 @@
   }
 
   &__sort {
-    padding: 12px 0;
+    padding: 17px 0;
     font-weight: 700;
     border-left: 1px solid #e0e0e0;
     border-right: 1px solid #e0e0e0;
   }
   &__sort-subtitle {
     padding: 12px 0;
-    font-weight: 700;
+    font-weight: 600;
     padding: 0 32px;
   }
   &__sort-label {
@@ -625,7 +660,7 @@
     margin-left: 10px;
     cursor: pointer;
     position: relative;
-    font-weight: 400;
+    font-weight: 300;
     span::before {
       position: absolute;
       content: '';
@@ -749,4 +784,10 @@
       opacity: 0.8;
     }
   }
+}
+
+.choices__placeholder {
+  opacity: 1;
+  color: #828282;
+  font-weight: 400;
 }
