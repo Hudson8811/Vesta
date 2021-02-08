@@ -1,0 +1,174 @@
+.kit {
+padding-top: 36px;
+    &__container {
+    }
+    
+    &__title {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+    
+    &__subtitle {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+    
+    &__row {
+        display: flex;
+    }
+
+    &__card {
+        width: 25%;
+        &:hover {
+            box-shadow: none;
+      
+            .catalog__card-interface {
+              opacity: 1;
+            }
+        }
+        &-plus {
+            z-index: 100;
+            position: absolute;
+            content: '';
+            background: #FFFFFF;
+            box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.1);
+            width: 40px;
+            height: 40px;
+            right: -20px;
+            top: 50%;
+            border-radius: 50%;
+            &::before{
+                position: absolute;
+                content: '';
+                width: 3px;
+                height: 14px;
+                background: #EB5757;
+                left: 50%;
+                right: 0px;
+                top: 13px;
+                bottom: 13px;
+                transform: translateX(-50%);
+
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                width: 14px;
+                height: 3px;
+                background: #EB5757;
+                right: 13px;
+                top: 50%;
+                left: 13px;
+                transform: translateY(-50%);
+            }
+        }
+        &-equally {
+             z-index: 100;
+            position: absolute;
+            content: '';
+            background: #FFFFFF;
+            box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.1);
+            width: 40px;
+            height: 40px;
+            right: -20px;
+            top: 50%;
+            border-radius: 50%;
+            &::before{
+                position: absolute;
+                content: '';
+                height: 3px;
+                background: #EB5757;
+                right: 13px;
+                bottom: 13px;
+                left: 13px;
+                transform: translateY(-50%);
+
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                height: 3px;
+                background: #EB5757;
+                right: 13px;
+                top: 17px;
+                left: 13px;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    &__product-count {
+        display: flex;
+        align-items: center;
+        padding-top: 40px;
+        margin-bottom: 285px;
+        bold {
+            font-size: 18px;
+            line-height: 32px;
+            display: flex;
+            align-items: center;
+            color: #828282;
+        }
+        span {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 32px;
+            display: flex;
+            align-items: center;
+            color: #000000;
+        }
+    }
+
+    &__product-price {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        span {
+            font-size: 14px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 0px 4px;
+            background: #EB5757;
+            border-radius: 3px;
+        }
+        div {
+            margin-right: 12px;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 32px;
+            display: flex;
+            align-items: center;
+            color: #828282;
+        }
+    }
+
+    &__price {
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 32px;
+        color: #000000;
+        margin-bottom: 38px;
+    }
+
+    &__button-primary {
+        margin-bottom: 12px;
+    }
+
+    &__button-secondary {
+        border-color: #E0E0E0;
+    }
+}

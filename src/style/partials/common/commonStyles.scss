@@ -647,3 +647,34 @@ body {
     padding-right: 0;
   }
 }
+
+
+.button-primary {
+  width: 100%;
+  color: #fff;
+  background: #eb5757;
+  border-radius: 3px;
+  padding: 10px 0;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background: #d73535;
+  }
+}
+
+.button-secondary {
+  width: 100%;
+  color: #eb5757;
+  background: #fff;
+  padding: 9px 0;
+  cursor: pointer;
+  border: 1px solid #eb5757;
+  border-radius: 0 3px 3px 0;
+  font-weight: 500;
+  transition: 0.3s;
+  &:hover {
+    background: #eb5757;
+    color: #fff;
+  }
+}
