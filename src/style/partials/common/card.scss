@@ -7,28 +7,79 @@
     }
     &__title {
         margin-bottom: 16px;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 1.5em;
+        display: flex;
+        align-items: center;
+        color: #000000;
+        @include for-mobile {
+            font-size: 22px;
+        }
     }
     &__content {
         display: flex;
         align-items: end;
         margin-bottom: 59px;
-    }
+        @include for-desktop {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @include for-mobile {
+           margin-bottom: 25px;
+        }
+    &__article {
+        flex: 0 0 auto;
 
+    }
     &__product {
         width: 33%;
         margin-right: 28px;
+        @include for-desktop {
+            order: 1;
+        }
+        @include for-tablet {
+            width: 48%;
+            margin-bottom: 30px;
+            margin-right: 5px;
+        }
+        @include for-mobile {
+            width: 100%;
+            margin-bottom: 20px;
+            margin-right: 0;
+        }
         &-buy {
             width: 33%;
             max-width: 309px;
             padding: 26px 21px;
             box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.1);
             border-radius: 3px;
+            @include for-desktop {
+                order: 2;
+            }
+            @include for-tablet {
+                width: 48%;
+                max-width: 100%;
+            margin-bottom: 30px;
+
+            }
+            @include for-mobile {
+                width: 100%;
+               margin: 0 auto;
+               margin-bottom: 20px;
+
+            }
         }
 
         &-info {
-        margin-right: 28px;
-        width: 54%;
-
+            margin-right: 28px;
+            width: 54%;
+            @include for-desktop {
+                order: 3;
+            }
+            @include for-tablet {
+                width: 100%;
+            }
         }
     }
 
@@ -43,6 +94,13 @@
     }
     &__product-img {
         margin-bottom: 20px;
+
+        &-wrapper {
+            @include for-mobile {
+                display: flex;
+                justify-content: center;
+            }
+        }
     }
     &__two-column {
         display: flex;
@@ -235,10 +293,12 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 32px;
+        overflow: auto;
         &-item {
             position: relative;
+            flex: 0 0 auto;
             &:not(:last-child) {
-                margin-right: 35px;
+                margin-right: 28px;
             }
             &:hover {
                 color: #EB5757;
@@ -247,7 +307,7 @@
                     height: 4px;
                     right: 0;
                     left: 0;
-                    bottom: -29px;
+                    bottom: -22px;
                     background-color: #EB5757;
                 }
             }

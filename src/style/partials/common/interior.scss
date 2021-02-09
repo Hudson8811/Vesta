@@ -6,25 +6,39 @@ padding-top: 72px;
     &__title {
         font-weight: bold;
         font-size: 28px;
-        line-height: 40px;
+        line-height: 1.5em;
         display: flex;
         align-items: center;
         color: #000000;
         margin-bottom: 36px;
+        @include for-mobile {
+            font-size: 18px;
+        }
     }
     
     &__content {
         display: flex;
+        flex-wrap: wrap;
     }
     
     &__img-wrapper {
 
         position: relative;
-        width: 33.33333%;
-        padding-top: (385/1240) * 100%;
+        width: 31.5%;
+        padding-top: (385/1225) * 100%;
         &:not(:last-child) {
-            margin-right: 36px;
+            margin-right: (33/1225) * 100%
         }
+        @include for-mobile {
+            width: 100%;
+            padding-top: (385/1240) * 100% + 60%;
+            &:not(:last-child) {
+                margin-right: 0px;
+                margin-bottom: 20px;
+
+            }
+        }
+     
     }
     
     &__img {
@@ -36,7 +50,7 @@ padding-top: 72px;
         background: url('../img/interior.jpg');
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover; 
     }
 }
     

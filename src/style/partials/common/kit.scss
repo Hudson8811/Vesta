@@ -1,16 +1,22 @@
 .kit {
 padding-top: 36px;
+@include for-mobile {
+    padding-top: 25px;
+}
     &__container {
     }
     
     &__title {
         font-weight: bold;
         font-size: 24px;
-        line-height: 32px;
+        line-height: 1.5em;
         display: flex;
         align-items: center;
         color: #000000;
         margin-bottom: 30px;
+        @include for-mobile {
+            font-size: 20px;
+        }
     }
     
     &__subtitle {
@@ -26,10 +32,95 @@ padding-top: 36px;
     
     &__row {
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__card {
         width: 25%;
+        &:nth-child(1) {
+            border-bottom-width: 1px;
+        }
+        &:nth-child(4n) {
+            border-right-width: 1px;
+        }
+        &:nth-child(3n) {
+            border-right-width: 0px;
+        }
+        @include for-desktop {
+            width: 50%;
+
+            &:nth-child(3) {
+                order: 2 ;
+                border-right-width: 1px;
+
+            }
+            &:nth-child(4) {
+                order: 1;
+                border-right-width: 0;
+            }
+        
+            &:nth-child(2) {
+                border-right-width: 1px;
+                .kit__card-plus {
+                    top: 100%;
+                    transform: translate(50%,-50%);
+                    right: 50%;
+                }
+            }
+            &:nth-child(3) {
+                .kit__card-equally {
+                    right: 100%;
+                    transform: translateX(50%);
+                }
+            }
+          
+        }
+
+        @include for-mobile {
+            width: 100%;
+            &:nth-child(1) {
+                .kit__card-plus {
+                    top: 100%;
+                    transform: translate(50%,-50%);
+                    right: 50%;
+                }
+            }
+            &:nth-child(3) {
+                order: 1;
+                .kit__card-equally {
+                    right: 50%;
+                    top: 100%;
+                    transform: translate(50%,-50%);
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        height: 13px;
+                        background: #EB5757;
+                        width: 3px;
+                        bottom: 13px;
+                        top: 20px;
+                        left: 22px;
+                        transform: translateY(-50%);
+        
+                    }
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        width: 3px;
+                        height: 13px;
+                        background: #EB5757;
+                        bottom: 13px;
+                        top: 20px;
+                        left: 15px;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+            &:nth-child(4) {
+                border-right-width: 1px!important;
+                
+            }
+        }
         &:hover {
             box-shadow: none;
       
@@ -48,6 +139,7 @@ padding-top: 36px;
             right: -20px;
             top: 50%;
             border-radius: 50%;
+           
             &::before{
                 position: absolute;
                 content: '';
