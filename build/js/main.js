@@ -205,6 +205,8 @@ $('.product-slick').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     adaptiveHeight: true,
+    variableWidth: true,
+
     responsive: [
     {
         breakpoint: 1300,

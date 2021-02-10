@@ -1,6 +1,8 @@
 .viewed {
     padding-top: 72px;
     padding-bottom: 50px;
+    background-color: #fefefe;
+
     &__container {
     }
     
@@ -55,6 +57,10 @@
     }
     &__price {
         padding-left: 0;
+    }
+
+    &__product {
+        height: 371px;
     }
 }
    

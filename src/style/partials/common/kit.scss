@@ -1,5 +1,7 @@
 .kit {
 padding-top: 36px;
+background-color: #fefefe;
+
 @include for-mobile {
     padding-top: 25px;
 }
