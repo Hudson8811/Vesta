@@ -11,8 +11,11 @@
         align-items: center;
         color: #000000;
         margin-bottom: 32px;
+        @include for-tablet {
+            font-size: 24px;
+        }
         @include for-mobile {
-            font-size: 18px;
+            font-size: 20px;
         }
     }
     
@@ -24,10 +27,11 @@
         align-items: center;
         color: #000000;
         margin-bottom: 44px;
-        flex-wrap: wrap;
+        overflow: auto;
     }
     
     &__group-item {
+        flex: 0 0 auto;
         padding: 8px 12px;
         background: #FFFFFF;
         border: 1px solid #E0E0E0;

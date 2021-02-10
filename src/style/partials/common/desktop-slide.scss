@@ -170,7 +170,7 @@
     position: absolute;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
     right: 0;
-    top: 54%;
+    top: 50%;
     width: 40px;
     height: 40px;
     border-radius: 4px;
@@ -183,7 +183,7 @@ border-radius: 4px;
     position: absolute;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
     left: 0;
-    top: 54%;
+    top: 50%;
     width: 40px;
     height: 40px;
     border-radius: 4px;
@@ -191,4 +191,48 @@ border-radius: 4px;
 box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
   }
+}
+
+.interior-slick {
+    @media (max-width: 1000px) {
+      .slick-arrow {
+        display: block!important; 
+      }
+    }
+  .slick-arrow-next {
+    position: absolute;
+    right: 8px;
+    margin-top: -10px;
+  }
+  .slick-arrow-prev {
+    position: absolute;
+    left: 8px;
+    margin-top: -10px;
+  }
+  .slick-arrow-next-wrapper {
+    position: absolute;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    right: 0;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background: #FFFFFF;
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+  }
+
+  .slick-arrow-prev-wrapper {
+    position: absolute;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    left: 0;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background: #FFFFFF;
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+  }
+
 }

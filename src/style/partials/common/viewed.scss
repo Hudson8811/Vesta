@@ -12,29 +12,50 @@
         align-items: center;
         color: #000000;
         margin-bottom: 32px;
+        @include for-tablet {
+            font-size: 24px;
+        }
         @include for-mobile {
             font-size: 20px;
         }
     }
     
     &__row {
-        display: flex;
-        flex-wrap: wrap;
+        // display: flex;
+        // flex-wrap: wrap;
     }
     &__card {
         width: 25%;
+        &:first-child {
+            border-bottom-width: 1px;
+        }
+        &:nth-child(3) {
+            border-right-width: 0;
+        }
+        &:nth-child(4) {
+            border-right-width: 1px;
+        }
         @include for-desktop {
             width: 50%;
+            &:nth-child(1) {
+                border-bottom-width: 0;
+            }
+            &:nth-child(2) {
+                border-bottom-width: 0;
+                border-right-width: 1px;
+
+            }
         }
         @include for-mobile {
             width: 100%;
+            &:nth-child(3) {
+                border-right-width: 1px;
+            }
         }
     }
     &__price {
         padding-left: 0;
     }
-
-
 }
    
    

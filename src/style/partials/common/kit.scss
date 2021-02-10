@@ -13,9 +13,12 @@ padding-top: 36px;
         display: flex;
         align-items: center;
         color: #000000;
-        margin-bottom: 30px;
-        @include for-mobile {
+        margin-bottom: 24px;
+        @include for-tablet {
             font-size: 20px;
+        }
+        @include for-mobile {
+            font-size: 16px;
         }
     }
     
@@ -27,7 +30,13 @@ padding-top: 36px;
         display: flex;
         align-items: center;
         color: #000000;
-        margin-bottom: 30px;
+        margin-bottom: 46px;
+        @include for-tablet {
+            font-size: 18px;
+        }
+        @include for-mobile {
+            font-size: 13px;
+        }
     }
     
     &__row {
@@ -48,7 +57,12 @@ padding-top: 36px;
         }
         @include for-desktop {
             width: 50%;
-
+            &:nth-child(1) {
+                border-bottom-width: 0px;
+            }
+            &:nth-child(2) {
+                border-bottom-width: 0px;
+            }
             &:nth-child(3) {
                 order: 2 ;
                 border-right-width: 1px;
@@ -76,8 +90,9 @@ padding-top: 36px;
           
         }
 
-        @include for-mobile {
+        @include for-tablet{
             width: 100%;
+            padding: 20px 10px;
             &:nth-child(1) {
                 .kit__card-plus {
                     top: 100%;
@@ -91,29 +106,7 @@ padding-top: 36px;
                     right: 50%;
                     top: 100%;
                     transform: translate(50%,-50%);
-                    &::before{
-                        position: absolute;
-                        content: '';
-                        height: 13px;
-                        background: #EB5757;
-                        width: 3px;
-                        bottom: 13px;
-                        top: 20px;
-                        left: 22px;
-                        transform: translateY(-50%);
-        
-                    }
-                    &::after{
-                        position: absolute;
-                        content: '';
-                        width: 3px;
-                        height: 13px;
-                        background: #EB5757;
-                        bottom: 13px;
-                        top: 20px;
-                        left: 15px;
-                        transform: translateY(-50%);
-                    }
+                  
                 }
             }
             &:nth-child(4) {
@@ -205,6 +198,10 @@ padding-top: 36px;
         align-items: center;
         padding-top: 40px;
         margin-bottom: 285px;
+
+        @include for-tablet {
+            margin-bottom: 53px;
+        }
         bold {
             font-size: 18px;
             line-height: 32px;
@@ -257,10 +254,13 @@ padding-top: 36px;
     }
 
     &__button-primary {
+        font-size: 16px;
         margin-bottom: 12px;
     }
 
     &__button-secondary {
         border-color: #E0E0E0;
+        font-size: 16px;
+
     }
 }

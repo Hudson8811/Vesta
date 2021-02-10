@@ -1,11 +1,16 @@
 .filters {
-   
+    flex-wrap: nowrap;
+    flex: 0 0 auto;
+    overflow: auto;
+    display: flex;
 }
 .filter {
     font-weight: 300;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    flex-wrap: nowrap;
+    flex: 0 0 auto;
     padding: 8px 12px;
     background: #f2f2f2;
     border-radius: 3px;
