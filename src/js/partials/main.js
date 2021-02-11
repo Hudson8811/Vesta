@@ -130,11 +130,11 @@ $('.desktop-slide_content, .catalog__menu').mouseleave(function(){
 $('.filter-mobile').click(function(e){
     e.preventDefault();
     $('.catalog__panel').addClass('catalog__panel-active')
-    $('.filter-mobile-close').toggleClass('filter-mobile-active')
+    $('.filter-mobile-close').addClass('filter-mobile-active')
     $('body').addClass('hidden')
 })
 
-$('.filter-mobile-close').click(function (e) {
+$('.filter-back').click(function (e) {
     $('.catalog__panel').removeClass('catalog__panel-active')
     $('body').removeClass('hidden')
 

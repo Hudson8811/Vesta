@@ -52,6 +52,7 @@
     &__product {
         width: 33%;
         margin-right: 28px;
+        position: relative;
         @include for-desktop {
         }
         @include for-tablet {
@@ -107,7 +108,11 @@
             }
         }
     }
-
+    &__interface {
+        opacity: 1;
+        top: 12px;
+        right: 12px;
+    }
     &__manufacturer {
         display: flex;
         align-items: center;
@@ -171,6 +176,9 @@
         font-size: 14px;
         line-height: 20px;
         color: #000000;
+        @include for-tablet {
+            font-size: 13px;
+        }
     }
     &__availability-wrapper {
         display: flex;
@@ -201,14 +209,20 @@
         div {
             font-weight: 900;
             font-size: 28px;
-            line-height: 32px;
+            line-height: 1.15em;
             margin-right: 6px;
+            @include for-tablet {
+                font-size: 24px;
+            }
         }
         span {
             position: relative;
             align-self: flex-end;
             font-size: 18px;
             color: #828282;
+            @include for-tablet {
+                font-size: 16px;
+            }
             &:after {
                 content: '';
                 position: absolute;

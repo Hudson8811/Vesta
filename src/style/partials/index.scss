@@ -475,3 +475,9 @@
     color: #000000;
   }
 }
+
+.filter-mobile-active {
+  @include for-tablet {
+    display: flex;
+  }
+}
