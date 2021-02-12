@@ -2,7 +2,9 @@
     padding-top: 72px;
     padding-bottom: 50px;
     background-color: #fefefe;
-
+    @include for-tablet {
+        padding-top: 49px;
+    }
     &__container {
     }
     

@@ -1,7 +1,9 @@
 .useful {
     padding-top: 68px;
     background-color: #fefefe;
-
+    @include for-mobile {
+        padding-top: 48px;
+    }
     &__container {
 
     }
@@ -30,11 +32,14 @@
         color: #000000;
         margin-bottom: 44px;
         overflow: auto;
+        @include for-tablet {
+            margin-bottom: 25px;
+        }
     }
     
     &__group-item {
         flex: 0 0 auto;
-        padding: 8px 12px;
+        padding: 10px 10px;
         background: #FFFFFF;
         border: 1px solid #E0E0E0;
         box-sizing: border-box;

@@ -3,6 +3,9 @@
     flex: 0 0 auto;
     overflow: auto;
     display: flex;
+    @include for-mobile {
+        margin-bottom: 10px;
+    }
 }
 .filter {
     font-weight: 300;

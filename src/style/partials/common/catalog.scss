@@ -134,7 +134,8 @@
     }
 
     @include for-mobile {
-      width: 100%;
+      width: calc(100% + 32px);
+      margin: 0 -16px;
       padding: 10px;
       border-right-width: 1px;
     }

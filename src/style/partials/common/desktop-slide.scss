@@ -156,6 +156,11 @@
 
 
 .product-slick {
+  @media (max-width: 1000px) {
+    .slick-arrow {
+      display: block!important; 
+    }
+  }
   .slick-arrow-next {
     position: absolute;
     right: 8px;

@@ -1,7 +1,9 @@
 .interior {
 padding-top: 72px;
 background-color: #fefefe;
-
+@include for-mobile {
+    padding-top: 48px;
+}
     &__container {
     }
     
@@ -47,6 +49,9 @@ background-color: #fefefe;
     
     &__img {
        margin-right: 20px;
+       @include for-tablet {
+           max-width: 313px;
+       }
     }
 }
     
