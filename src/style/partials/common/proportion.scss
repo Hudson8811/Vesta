@@ -11,6 +11,10 @@
     font-size: 14px;
     line-height: 24px;
     color: #000000;
+
+    @include for-mobile {
+      margin-bottom: 16px;
+    }
   }
 
   &__filters {
@@ -19,11 +23,19 @@
 
     &:last-child {
       margin-top: 8px;
+
+      @include for-tablet {
+        margin-top: 20px;
+      }
       .proportion__filter {
         margin-right: 10px;
 
         span {
           padding: 11px 9px;
+
+          @include for-tablet {
+            padding: 12px 13px;
+          }
         }
       }
     }
@@ -70,7 +82,18 @@
 
     &:not(:last-child) {
       margin-right: 8px;
+
+      @include for-mobile {
+        margin-right: 6px;
+      }
     }
+
+    @include for-mobile {
+      margin-right: 6px;
+      margin-left: 6px;
+      margin-bottom: 20px;
+    }
+
     span {
       display: inline-flex;
       min-width: 76px;
@@ -81,6 +104,10 @@
       border: 1px solid #e0e0e0;
       border-radius: 3px;
       transition: 0.4s;
+
+      @include for-mobile {
+        min-width: 88px;
+      }
     }
     input {
       display: none;
@@ -96,34 +123,47 @@
 
     &_md {
       position: relative;
-    cursor: pointer;
-    display: inline-flex;
-    margin-bottom: 6px;
-
-    &:not(:last-child) {
-      margin-right: 10px;
-    }
-    span {
+      cursor: pointer;
       display: inline-flex;
-      padding: 8px 16px;
-      border: 1px solid #e0e0e0;
-      border-radius: 3px;
-      transition: 0.4s;
-    }
-    input {
-      display: none;
-      &:checked + span {
-        border-color: #eb5757;
-      }
-    }
+      margin-bottom: 6px;
 
-    &.disabled {
-      opacity: 0.6;
-      pointer-events: none;
-    } 
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+      span {
+        display: inline-flex;
+        padding: 8px 16px;
+        border: 1px solid #e0e0e0;
+        border-radius: 3px;
+        transition: 0.4s;
+      }
+      input {
+        display: none;
+        &:checked + span {
+          border-color: #eb5757;
+        }
+      }
+
+      &.disabled {
+        opacity: 0.6;
+        pointer-events: none;
+      }
     }
   }
 }
 .choices__inner {
   min-height: 43px;
+
+  @include for-tablet {
+    min-height: 40px;
+  }
+}
+
+.catalog__proportion {
+  .proportion__filters {
+    @include for-mobile {
+      margin-left: -6px;
+      margin-right: -6px;
+    }
+  }
 }

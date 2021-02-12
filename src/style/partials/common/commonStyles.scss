@@ -618,6 +618,16 @@ body {
   background: #eb5757;
   border-radius: 3px;
   color: #fff;
+
+  @include for-tablet {
+    padding: 3px 6px;
+  }
+
+  @include for-mobile {
+    padding: 4px 8px;
+    top: 14px;
+    left: 5px;
+  }
 }
 
 .display-none {
