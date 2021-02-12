@@ -42,6 +42,10 @@ body {
   }
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .search {
   position: relative;
   display: block;
@@ -648,7 +652,6 @@ body {
   }
 }
 
-
 .button-primary {
   width: 100%;
   color: #fff;
@@ -678,4 +681,3 @@ body {
     color: #fff;
   }
 }
-
