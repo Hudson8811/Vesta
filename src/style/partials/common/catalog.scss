@@ -601,7 +601,6 @@
     &:checked + .catalog__brand-castom-radio {
       border: 1px solid #eb5757;
       z-index: 1;
-      border-right-width: 1px;
     }
   }
   &__brand-select {
@@ -728,6 +727,39 @@
       border-left: none;
       border-right: none;
     }
+    @include for-mobile {
+      display: none;
+    }
+
+    &-mobile {
+      display: none;
+      min-width: 150px;
+      .choices__item--disabled {
+        display: none!important;
+      }
+      .choices__list--dropdown {
+        z-index: 100;
+      }
+      @include for-mobile {
+        display: block;
+      }
+      .choices__inner {
+        border: none;
+        border-radius: 3px;
+        background-color: #fff;
+    }
+    .choices__placeholder {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      color: #000000;
+      }
+      .choices__list--single {
+        padding: 6px 30px 4px 4px;
+    }
+    }
   }
   &__sort-subtitle {
     padding: 12px 0;
@@ -800,11 +832,11 @@
 box-shadow: 0px 2px 6px rgba(60, 59, 90, 0.04), 0px 2px 40px rgba(60, 59, 90, 0.04);
 }
 .catalog_never-mind {
-  padding: 12px 30px;
+  flex: 2 0 auto;
 }
 
 .number-of-cameras {
-  padding: 12px 18px;
+  flex: 1 1 auto;
 }
 
 .slick-catalog-wrapper {
