@@ -1,67 +1,96 @@
 .useful {
-    padding-top: 68px;
-    background-color: #fefefe;
+  padding-top: 68px;
+  background-color: #fefefe;
+
+  @include for-tablet {
+    padding-top: 54px;
+  }
+
+  @include for-mobile {
+    padding-top: 48px;
+  }
+  &__container {
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-bottom: 32px;
+    @include for-tablet {
+      font-size: 24px;
+    }
     @include for-mobile {
-        padding-top: 48px;
+      font-size: 20px;
     }
-    &__container {
+  }
 
+  &__group {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-bottom: 24px;
+    overflow: auto;
+    @include for-tablet {
+      margin-bottom: 25px;
     }
-    &__title {
-        font-weight: bold;
-        font-size: 28px;
-        line-height: 40px;
-        display: flex;
-        align-items: center;
-        color: #000000;
-        margin-bottom: 32px;
-        @include for-tablet {
-            font-size: 24px;
-        }
-        @include for-mobile {
-            font-size: 20px;
-        }
-    }
-    
-    &__group {
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 16px;
-        display: flex;
-        align-items: center;
-        color: #000000;
-        margin-bottom: 44px;
-        overflow: auto;
-        @include for-tablet {
-            margin-bottom: 25px;
-        }
-    }
-    
-    &__group-item {
-        flex: 0 0 auto;
-        padding: 10px 10px;
-        background: #FFFFFF;
-        border: 1px solid #E0E0E0;
-        box-sizing: border-box;
-        border-radius: 3px;
-        margin-bottom: 10px;
-        &.is-active {
-            border: 1px solid #EB5757;
-        }
-        span {
-            opacity: 0.5;
-        }
-        &:not(:last-child) {
-            margin-right: 12px;
-        }
-    }
-    
-    &__row {
-        // display: flex;
-    }
+  }
 
-    &__price {
-        padding-left: 0;
+  &__group-item {
+    flex: 0 0 auto;
+    padding: 10px 13px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    &.is-active {
+      border: 1px solid #eb5757;
     }
+    span {
+      opacity: 0.5;
+    }
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+
+  &__row {
+    // display: flex;
+  }
+
+  &__price {
+    padding-left: 0;
+  }
+
+  .catalog__card-img-wrapper {
+    .slick-slide {
+      height: 257px;
+
+      @include for-tablet {
+        height: 207px;
+      }
+    }
+  }
+
+  .slick-catalog-article {
+    bottom: 35px;
+  }
 }
-    
+
+.product-slick {
+  .slick-arrow-next-wrapper {
+    right: 8px;
+    margin-top: -20px;
+  }
+
+  .slick-arrow-prev-wrapper {
+    left: 8px;
+    margin-top: -20px;
+  }
+}

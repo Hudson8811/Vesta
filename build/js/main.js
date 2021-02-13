@@ -185,6 +185,15 @@ $('.slick-catalog').slick({
     nextArrow: false,
 });
 
+$('.card__product-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slick-card'
+  });
+
+
 $('.slick-card').slick({
     infinity: true,
     dots: false,
@@ -193,6 +202,7 @@ $('.slick-card').slick({
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,
+    asNavFor: '.card__product-slider',
 
 });
 
@@ -205,7 +215,6 @@ $('.product-slick').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     adaptiveHeight: true,
-    variableWidth: true,
 
     responsive: [
     {
@@ -221,7 +230,7 @@ $('.product-slick').slick({
     {
         breakpoint: 1000,
         settings: {
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         infinite: true,
         accessibility: true,
@@ -248,7 +257,6 @@ $('.interior-slick').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    variableWidth: true,
     accessibility: true,
 
     responsive: [
@@ -267,6 +275,7 @@ $('.interior-slick').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         accessibility: true,
+        variableWidth: true,
         arrows: true,   
         
         }

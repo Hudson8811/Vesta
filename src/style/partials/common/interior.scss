@@ -1,57 +1,56 @@
 .interior {
-padding-top: 72px;
-background-color: #fefefe;
-@include for-mobile {
+  padding-top: 72px;
+  background-color: #fefefe;
+
+  @include for-tablet {
+    padding-top: 57px;
+  }
+
+  @include for-mobile {
     padding-top: 48px;
-}
-    &__container {
-    }
-    
-    &__title {
-        font-weight: bold;
-        font-size: 28px;
-        line-height: 1.5em;
-        display: flex;
-        align-items: center;
-        color: #000000;
-        margin-bottom: 36px;
-        @include for-tablet {
-            font-size: 24px;
-        }
-        @include for-mobile {
-            font-size: 20px;
-        }
-    }
-    
-    &__content {
-        
-    }
-    
-    &__img-wrapper {
+  }
+  &__container {
+  }
 
-        position: relative;
-        width: 31.5%;
-        padding-top: (385/1225) * 100%;
-        &:not(:last-child) {
-            margin-right: (33/1225) * 100%
-        }
-        @include for-mobile {
-            width: 100%;
-            padding-top: (385/1240) * 100% + 60%;
-            &:not(:last-child) {
-                margin-right: 0px;
-                margin-bottom: 20px;
+  &__title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.5em;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-bottom: 31px;
+    @include for-tablet {
+      font-size: 24px;
+    }
+    @include for-mobile {
+      font-size: 20px;
+    }
+  }
 
-            }
-        }
-     
+  &__content {
+  }
+
+  &__img-wrapper {
+    position: relative;
+    width: 31.5%;
+    padding-top: (385/1225) * 100%;
+    &:not(:last-child) {
+      margin-right: (33/1225) * 100%;
     }
-    
-    &__img {
-       margin-right: 20px;
-       @include for-tablet {
-           max-width: 313px;
-       }
+    @include for-mobile {
+      width: 100%;
+      padding-top: (385/1240) * 100% + 60%;
+      &:not(:last-child) {
+        margin-right: 0px;
+        margin-bottom: 20px;
+      }
     }
+  }
+
+  &__img {
+    margin-right: 20px;
+    @include for-tablet {
+    }
+  }
 }
-    

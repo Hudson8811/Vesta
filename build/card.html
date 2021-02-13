@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="wrapper catalog-page">
+    <div class="wrapper catalog-page card-page">
 
         <header class="header">
         
@@ -334,7 +334,7 @@
                         <div class="filter">Подходит для влажных помещений</div>
                         <div class="filter">Повышенная утепленность</div>
                     </div>
-                    <div class="card__article">Арт.: 1234876</div>
+                    <div class="card__article">Арт.: <span>1234876</span></div>
                 </div>
                 <div class="card__content">
                     <div class="card__product">
@@ -374,13 +374,30 @@
                             </div>
                         </div>
                         <div class="card__product-img-wrapper">
-                            <img src=" img/card-photo.png" alt="" class="card__product-img">
-
+                           <div class="card__product-slider">
+                                <div>
+                                    <img src="img/card-photo.png" alt="" class="card__product-img">
+                                </div>
+                                <div>
+                                    <img src="img/card-photo.png" alt="" class="card__product-img">
+                                </div>
+                                <div>
+                                    <img src="img/card-photo.png" alt="" class="card__product-img">
+                                </div>
+                                <div>
+                                    <img src="img/card-photo.png" alt="" class="card__product-img">
+                                </div>
+                                <div>
+                                    <img src="img/card-photo.png" alt="" class="card__product-img">
+                                </div>
+                                <div>
+                                    <img src="img/card-photo.png" alt="" class="card__product-img">
+                                </div>
+                           </div>
                         </div>
                         <div class="slick-card">
-                            <div class="slick-item"><img src="img/slide-photo.png" alt=""></div>
+                            <div class="slick-item"><img src="img/card-photo.png" alt=""></div>
                             <div class="slick-item"><img src="img/slide-photo2.png" alt=""></div>
-
                             <div class="slick-item"><img src="img/slide-photo3.png" alt=""></div>
                             <div class="slick-item"><img src="img/slide-photo4.png" alt=""></div>
                             <div class="slick-item"><img src="img/slide-photo2.png" alt=""></div>
@@ -616,7 +633,7 @@
                                         <option value="">ghbd</option>
                                     </select>
                                     <div class="catalog__price">
-                                        <bold>142 000</bold> руб./шт
+                                        <bold>142 000</bold> <span class="nowrap"><span class="nowrap">руб./шт</span></span>
                                     </div>
                                 </div>
                                 <div class="catalog__card-desc">Базовое двухкамерное окно для
@@ -734,11 +751,11 @@
                                         <option value="">114х118 см</option>
                                     </select>
                                     <div class="catalog__price">
-                                        <bold>142 000</bold> руб./шт
+                                        <bold>142 000</bold> <span class="nowrap">руб./шт</span>
                                     </div>
                                 </div>
                                 <div class="catalog__card-desc">Изоляционный оклад ESV - оклад для герметичной установки
-                                    мансардных окон для плоских кровельных матриалов</div>
+                                    мансардных <span class="nowrap">окон для</span> плоских кровельных матриалов</div>
                             </div>
                             <div class="catalog__properties-wrapper">
                                 <div class="catalog__properties-title">Материал</div>
@@ -842,10 +859,10 @@
                                         <option value="">80 рул</option>
                                     </select>
                                     <div class="catalog__price">
-                                        <bold>1 420 </bold> руб./шт
+                                        <bold>1 420 </bold> <span class="nowrap">руб./шт</span>
                                     </div>
                                 </div>
-                                <div class="catalog__card-desc">Гидро-ветрозащитная пленка для плоской кровли и фасадов,
+                                <div class="catalog__card-desc">Гидро-ветрозащитная пленка для <span class="nowrap">плоской кровли</span> и фасадов,
                                     предназначена для защиты теплоизоляции снаружи </div>
                             </div>
                             <div class="catalog__properties-wrapper">
@@ -890,10 +907,10 @@
                     </div>
                     <div class="catalog__card kit__card">
                         <div class="kit__product-count">
-                            <bold>Всего:</bold> <span>3 товара</span>
+                            <bold>Всего: </bold> <span> 3 товара</span>
                         </div>
                         <div class="kit__product-price">
-                            <div>42 000 Руб.</div>
+                            <div>145 600</div>
                             <span class="kit__share">-20%</span>
                         </div>
                         <div class="kit__price">
@@ -1004,7 +1021,7 @@
                                     </h4>
                                     <div class="catalog__check-price">
                                         <div class="catalog__price viewed__price">
-                                            <bold>3 000 </bold> руб./шт
+                                            <bold>3 000 </bold> <span class="nowrap">руб./шт</span>
                                         </div>
 
                                     </div>
@@ -1075,7 +1092,7 @@
                                     </h4>
                                     <div class="catalog__check-price">
                                         <div class="catalog__price viewed__price">
-                                            <bold>3 100 </bold> руб./шт
+                                            <bold>3 100 </bold> <span class="nowrap">руб./шт</span>
                                         </div>
                                     </div>
                                     <button class="catalog__button">В корзину</button>
@@ -1143,7 +1160,7 @@
                                     </h4>
                                     <div class="catalog__check-price">
                                         <div class="catalog__price viewed__price">
-                                            <bold>4 200 </bold> руб./шт
+                                            <bold>4 200 </bold> <span class="nowrap">руб./шт</span>
                                         </div>
                                     </div>
                                     <button class="catalog__button">В корзину</button>
@@ -1212,7 +1229,7 @@
                                     </h4>
                                     <div class="catalog__check-price">
                                         <div class="catalog__price viewed__price">
-                                            <bold>3 000 </bold> руб./шт
+                                            <bold>3 000 </bold> <span class="nowrap">руб./шт</span>
                                         </div>
                                     </div>
                                     <button class="catalog__button">В корзину</button>
@@ -1280,7 +1297,7 @@
                                     </h4>
                                     <div class="catalog__check-price">
                                         <div class="catalog__price viewed__price">
-                                            <bold>142 000</bold> руб./шт
+                                            <bold>142 000</bold> <span class="nowrap">руб./шт</span>
                                         </div>
                                     </div>
                                     <button class="catalog__button">В корзину</button>
@@ -1360,7 +1377,7 @@
                                     </h4>
                                     <div class="catalog__check-price">
                                         <div class="catalog__price viewed__price">
-                                            <bold>3 000 </bold> руб./шт
+                                            <bold>3 000 </bold> <span class="nowrap">руб./шт</span>
                                         </div>
 
                                     </div>
@@ -1430,7 +1447,7 @@
                                     </h4>
                                     <div class="catalog__check-price">
                                         <div class="catalog__price viewed__price">
-                                            <bold>3 100 </bold> руб./шт
+                                            <bold>3 100 </bold> <span class="nowrap">руб./шт</span>
                                         </div>
                                     </div>
 
@@ -1497,7 +1514,7 @@
                                     </h4>
                                     <div class="catalog__check-price">
                                         <div class="catalog__price viewed__price">
-                                            <bold>4 200 </bold> руб./шт
+                                            <bold>4 200 </bold> <span class="nowrap">руб./шт</span>
                                         </div>
                                     </div>
 
@@ -1565,7 +1582,7 @@
                                     </h4>
                                     <div class="catalog__check-price">
                                         <div class="catalog__price viewed__price">
-                                            <bold>3 000 </bold> руб./шт
+                                            <bold>3 000 </bold> <span class="nowrap">руб./шт</span>
                                         </div>
                                     </div>
 
@@ -1632,7 +1649,7 @@
                                     </h4>
                                     <div class="catalog__check-price">
                                         <div class="catalog__price viewed__price">
-                                            <bold>142 000</bold> руб./шт
+                                            <bold>142 000</bold> <span class="nowrap">руб./шт</span>
                                         </div>
                                     </div>
 
