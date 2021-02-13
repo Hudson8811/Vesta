@@ -7,9 +7,13 @@
   }
 
   @include for-mobile {
-    padding-top: 25px;
+    padding-top: 84px;
   }
   &__container {
+  }
+
+  .slick-catalog-article {
+    bottom: 1px;
   }
 
   &__title {
@@ -100,6 +104,10 @@
       &:nth-child(3) {
         order: 1;
 
+        @include for-mobile {
+          order: 0;
+        }
+
         .kit__card-equally {
           right: 50%;
           top: 100%;
@@ -113,6 +121,10 @@
       .slick-catalog-share {
         top: 6px;
         left: 16px;
+
+        @include for-mobile {
+          left: 3px;
+        }
       }
 
       .slick-catalog-article {
@@ -126,11 +138,17 @@
       .catalog__card-interface {
         right: auto;
         left: 39.5%;
+
+        @include for-mobile {
+          display: none;
+        }
       }
     }
     @include for-mobile {
-      width: calc(100% + 32px);
-      margin: 0 -16px;
+      width: calc(100% + 28px);
+      margin: 0 -14px;
+      padding: 26px 14px;
+
       &:not(:last-child) {
         flex-direction: column;
       }

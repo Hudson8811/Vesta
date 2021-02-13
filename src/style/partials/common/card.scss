@@ -43,6 +43,7 @@
       font-size: 32px;
     }
     @include for-mobile {
+      padding-top: 19px;
       font-size: 28px;
       line-height: 1.3em;
     }
@@ -87,6 +88,10 @@
       margin-top: 20px;
     }
 
+    @include for-mobile {
+      margin-top: 9px;
+    }
+
     span {
       color: #000;
     }
@@ -126,12 +131,11 @@
         margin-left: auto;
       }
       @include for-mobile {
-        width: 100%;
-        margin: 0 auto;
+        width: calc(100% + 28px);
+        margin: 0 -14px;
+        max-width: calc(100% + 28px);
         margin-bottom: 20px;
-        width: calc(100% + 32px);
-        margin: 0 -16px;
-        max-width: calc(100% + 32px);
+        padding: 28px 14px;
       }
     }
 
@@ -165,6 +169,10 @@
       @include for-mobile {
         margin-bottom: 28px;
         width: 100%;
+
+        .proportion__filters .proportion__filter_md {
+          width: 66px;
+        }
       }
     }
   }
@@ -172,6 +180,11 @@
     opacity: 1;
     top: 12px;
     right: 12px;
+
+    @include for-mobile {
+      top: 3px;
+      right: 4px;
+    }
   }
   &__manufacturer {
     display: flex;
@@ -197,8 +210,6 @@
     }
     &-wrapper {
       @include for-mobile {
-        display: flex;
-        justify-content: center;
       }
     }
   }
@@ -253,6 +264,10 @@
     @include for-tablet {
       margin-bottom: 14px;
     }
+
+    @include for-mobile {
+      margin-bottom: 19px;
+    }
   }
 
   &__desc {
@@ -299,6 +314,12 @@
       @include for-tablet {
         font-size: 24px;
       }
+
+      @include for-mobile {
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 32px;
+      }
     }
     span {
       position: relative;
@@ -307,6 +328,10 @@
       color: #828282;
       @include for-tablet {
         font-size: 16px;
+      }
+
+      @include for-mobile {
+        font-size: 18px;
       }
       &:after {
         content: '';
@@ -329,6 +354,10 @@
     @include for-tablet {
       margin-bottom: 23px;
       justify-content: flex-start;
+    }
+
+    @include for-mobile {
+      margin-bottom: 17px;
     }
   }
 
@@ -425,6 +454,10 @@
     @include for-tablet {
       margin-bottom: 25px;
     }
+
+    @include for-mobile {
+      margin-bottom: 31px;
+    }
   }
 
   &__menu {
@@ -513,6 +546,10 @@
       height: 324px;
     }
 
+    @include for-mobile {
+      height: 297px;
+    }
+
     img {
       display: block;
       width: 100%;
@@ -551,6 +588,10 @@
 
     @include for-tablet {
       height: 44px;
+    }
+
+    @include for-mobile {
+      margin: 0 5px;
     }
 
     img {
@@ -594,16 +635,30 @@
     .catalog__card-title {
       max-width: 100%;
       margin-bottom: 20px;
+
+      @include for-mobile {
+        display: none;
+      }
     }
 
     .kit__card-column {
       &:nth-child(3) {
         padding-right: 23px;
+        margin-bottom: 38px;
+
+        @include for-mobile {
+          padding-right: 0;
+        }
       }
 
       &:nth-child(4) {
         padding-left: 23px;
         padding-right: 14px;
+
+        @include for-mobile {
+          padding-right: 0;
+          padding-left: 0;
+        }
       }
     }
   }
@@ -655,6 +710,31 @@
         margin-bottom: 28px;
       }
     }
+
+    @include for-mobile {
+      width: calc(100% + 28px);
+      margin: 0 -14px;
+      padding: 26px 14px;
+
+      button {
+        width: 100%;
+        margin-bottom: 0;
+        min-height: 46px;
+
+        & + button {
+          margin-left: 0;
+          margin-top: 12px;
+        }
+      }
+
+      .kit__product-count {
+        margin-bottom: 37px;
+      }
+
+      .kit__price {
+        margin-bottom: 40px;
+      }
+    }
   }
 
   &:hover {
@@ -663,6 +743,10 @@
 
   .catalog__filters {
     margin-bottom: 0;
+
+    @include for-mobile {
+      margin-top: 15px;
+    }
   }
 
   .catalog__properties-wrapper {
@@ -691,6 +775,12 @@
       height: 312px;
       margin: 0 15px;
       max-width: 313px;
+    }
+
+    @include for-mobile {
+      height: 215px;
+      width: 216px;
+      margin: 0 6px;
     }
 
     img {
@@ -733,5 +823,9 @@
 
   .container {
     width: calc(100% - 48px);
+
+    @include for-mobile {
+      width: calc(100% - 28px);
+    }
   }
 }

@@ -7,7 +7,7 @@
   }
 
   @include for-mobile {
-    padding-top: 48px;
+    padding-top: 44px;
   }
   &__container {
   }
@@ -24,6 +24,7 @@
     }
     @include for-mobile {
       font-size: 20px;
+      margin-bottom: 16px;
     }
   }
 
@@ -38,6 +39,10 @@
     overflow: auto;
     @include for-tablet {
       margin-bottom: 25px;
+    }
+
+    @include for-mobile {
+      margin-bottom: 20px;
     }
   }
 
@@ -80,6 +85,12 @@
 
   .slick-catalog-article {
     bottom: 35px;
+  }
+
+  .slick-slide {
+    @include for-mobile {
+      width: 240px;
+    }
   }
 }
 

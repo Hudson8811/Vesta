@@ -107,11 +107,23 @@
       opacity: 1;
     }
   }
+  .slick-catalog-share {
+    @include for-mobile {
+      font-size: 12px;
+      padding: 4px 4px;
+      top: 0px;
+      left: 0px;
+    }
+  }
 }
 
 .product-slick {
   border-left: 1px solid #e0e0e0;
   border-right: 1px solid #e0e0e0;
+
+  @include for-mobile {
+    border-right: 0;
+  }
 
   .slick-item + .slick-item {
     .product {

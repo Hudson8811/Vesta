@@ -5,6 +5,14 @@
   @include for-tablet {
     padding-top: 49px;
   }
+
+  @include for-mobile {
+    padding-top: 42px;
+
+    .slick-item {
+      width: 240px;
+    }
+  }
   &__container {
   }
 
@@ -21,6 +29,7 @@
     }
     @include for-mobile {
       font-size: 20px;
+      margin-bottom: 20px;
     }
   }
 

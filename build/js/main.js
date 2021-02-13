@@ -242,6 +242,7 @@ $('.product-slick').slick({
         settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        variableWidth:true,
         accessibility: true,
 
         }
@@ -249,6 +250,7 @@ $('.product-slick').slick({
     ]
         
 });
+
 $('.interior-slick').slick({
     infinity: true,
     dots: false,
@@ -285,7 +287,8 @@ $('.interior-slick').slick({
         settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        accessibility: true,
+        accessibility: true, 
+        variableWidth: true,
         arrows: true,   
         adaptiveHeight: true,
         
