@@ -14,6 +14,10 @@
     }
   }
   &__container {
+    @include for-mobile {
+      width: 100vw !important;
+      padding-left: 14px;
+    }
   }
 
   &__title {

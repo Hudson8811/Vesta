@@ -23,9 +23,13 @@
     .filters {
       @include for-tablet {
         position: absolute;
-        width: 100vw;
+        width: calc(100vw - 48px);
         left: 0;
         top: 0;
+      }
+
+      @include for-mobile {
+        width: calc(100vw - 28px);
       }
     }
   }
@@ -476,6 +480,12 @@
       width: calc(100vw - 24px);
     }
 
+    @include for-mobile {
+      padding: 17px 0;
+      position: absolute;
+      width: calc(100vw - 14px);
+    }
+
     &-item {
       position: relative;
       flex: 0 0 auto;
@@ -811,6 +821,13 @@
 
 .card-page {
   font-family: 'Open Sans', sans-serif;
+
+  .slick-catalog-article {
+    font-weight: 400;
+    b {
+      color: #000;
+    }
+  }
   .slick-dots {
     bottom: -14px;
 

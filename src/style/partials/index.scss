@@ -272,7 +272,7 @@
   list-style: none;
   height: 100%;
   box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.1);
-  z-index: 2;
+  z-index: 20;
 
   &-wrap {
     position: fixed;
@@ -369,14 +369,13 @@
   list-style: none;
   position: absolute;
   z-index: 1;
-  top: 0;
+  top: -2px;
   right: 320px;
-  background: #f2f2f2;
+  background-color: #fff;
   width: 320px;
   height: 100%;
   transition: 0.2s;
   transform: translateX(200%);
-  padding-top: 4px;
 
   &-active {
     transform: translateX(0);
@@ -384,7 +383,7 @@
 
   @include for-mobile {
     right: 0;
-    z-index: 100;
+    z-index: 21;
     background: #fff;
   }
 }
@@ -442,7 +441,7 @@
 .back-menu-btn {
   display: none;
   position: fixed;
-  left: 16px;
+  left: 14px;
   top: 0;
   height: 60px;
   width: calc(100vw - 70px);

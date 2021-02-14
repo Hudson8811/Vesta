@@ -272,6 +272,7 @@
       border-radius: 3px;
     }
     div {
+      position: relative;
       margin-right: 12px;
       font-weight: normal;
       font-size: 18px;
@@ -279,6 +280,16 @@
       display: flex;
       align-items: center;
       color: #828282;
+
+      &:after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        background-color: #eb5757;
+        top: 50%;
+        left: 0;
+        right: 0;
+      }
     }
   }
 

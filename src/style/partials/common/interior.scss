@@ -10,6 +10,10 @@
     padding-top: 48px;
   }
   &__container {
+    @include for-mobile {
+      width: 100vw !important;
+      padding-left: 14px;
+    }
   }
 
   &__title {
