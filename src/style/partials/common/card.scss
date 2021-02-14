@@ -231,11 +231,18 @@
   &__column {
     margin-right: 28px;
     @include for-tablet {
+      width: 48%;
+
       &:first-child {
-        margin-right: -10px;
+        margin-right: auto;
       }
+
       margin-right: 0;
       margin-bottom: 9px;
+    }
+
+    @include for-mobile {
+      width: 100%;
     }
   }
   &__column-item {
