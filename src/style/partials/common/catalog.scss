@@ -535,6 +535,7 @@
   }
   &__filter-wrapper {
     display: flex;
+    background-color: #fff;
     @include for-tablet {
       justify-content: space-between;
       align-items: center;
@@ -1104,6 +1105,7 @@
     text-transform: uppercase;
     color: #000000;
     font-family: 'Open Sans';
+    background-color: #fff;
 
     &--active {
       border-color: #333333;
