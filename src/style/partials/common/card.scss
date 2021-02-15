@@ -765,7 +765,8 @@
   }
 
   &:hover {
-    border: 2px solid #bdbdbd;
+    z-index: 2;
+    outline: 2px solid #bdbdbd;
   }
 
   .catalog__filters {
