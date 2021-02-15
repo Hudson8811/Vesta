@@ -75,15 +75,6 @@
 
   &__card {
     width: 25%;
-    &:nth-child(1) {
-      border-bottom-width: 1px;
-    }
-    &:nth-child(4n) {
-      border-right-width: 1px;
-    }
-    &:nth-child(3n) {
-      border-right-width: 0px;
-    }
 
     @include for-tablet {
       width: 100%;
@@ -102,8 +93,6 @@
         }
       }
       &:nth-child(3) {
-        order: 1;
-
         @include for-mobile {
           order: 0;
         }

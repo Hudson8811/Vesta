@@ -496,6 +496,11 @@
     &-item {
       position: relative;
       flex: 0 0 auto;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 32px;
+      color: #000000;
+      cursor: pointer;
 
       @include for-tablet {
         font-size: 14px;
@@ -630,9 +635,14 @@
 }
 
 .kit__card {
-  border: 2px solid transparent !important;
+  border: 1px solid #e0e0e0;
   max-width: 304px;
   width: 24.83%;
+  background-color: #fff;
+
+  & + .kit__card {
+    border-left: 0;
+  }
 
   @include for-tablet {
     min-height: 386px;
@@ -755,7 +765,7 @@
   }
 
   &:hover {
-    border-color: #bdbdbd !important;
+    border: 2px solid #bdbdbd;
   }
 
   .catalog__filters {
@@ -851,5 +861,22 @@
     @include for-mobile {
       width: calc(100% - 28px);
     }
+  }
+}
+
+.div-slick-catalog-nav {
+  position: absolute;
+  z-index: 10;
+  left: 10px;
+  top: 30px;
+  width: calc(100% - 20px);
+  height: calc(100% - 60px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  &-item {
+    width: 25%;
+    height: 100%;
   }
 }

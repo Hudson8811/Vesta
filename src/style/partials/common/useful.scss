@@ -2,6 +2,10 @@
   padding-top: 68px;
   background-color: #fefefe;
 
+  .product {
+    background-color: #fff;
+  }
+
   @include for-tablet {
     padding-top: 54px;
   }
