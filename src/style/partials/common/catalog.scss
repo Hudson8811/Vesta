@@ -116,6 +116,7 @@
     border-bottom-width: 0;
     border-right-width: 0;
     transition: box-shadow 0.2s linear;
+    background-color: #fff;
 
     @include for-tablet {
       padding: 24px 23px;
