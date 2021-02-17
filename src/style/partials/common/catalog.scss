@@ -54,8 +54,11 @@
     flex-wrap: nowrap;
     font-size: 14px;
     padding-top: 14px;
+    overflow-x: auto;
+    overflow-y: hidden;
     @include for-tablet {
       padding-top: 80px;
+      width: calc(100% + 14px);
     }
   }
 
