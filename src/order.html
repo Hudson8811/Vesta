@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper catalog-page">
+
+        //= common/header
+        <main>
+            <section class="ket-page">
+                <div class="container">
+                    <h2 class="ket-title">Оформление заказа</h2>
+                    <div class="ket-wrapper">
+                        <div class="ket-content">
+                            <div class="ket-tabs">
+                                <a href="#" data-id="1" class="ket-tabs-item is-active">Физическое лицо</a>
+                                <a href="#" data-id="2" class="ket-tabs-item">Физическое лицо</a>
+                            </div>
+    
+                            <form data-id="1" class="ket-form is-active">
+                                <label class="ket-label disabled">
+                                    <span>Фамилия и имя</span>
+                                    <input type="text">
+                                    <p class="ket-error">Поле не заполнено</p>
+                                </label>
+    
+                                <label class="ket-label">
+                                    <span>Электронная почта</span>
+                                    <input type="email">
+                                    <p class="ket-error">Поле не заполнено</p>
+                                </label>
+    
+                                <label class="ket-label">
+                                    <span>Номер телефона</span>
+                                    <input type="text" name="phone" placeholder="+7(_ _ _) _ _ _- _ _- _ _">
+                                    <p class="ket-error">Поле не заполнено</p>
+                                </label>
+                                <div class="ket-polic">
+                                    <label class="ket-polic-check">
+                                        <input type="checkbox">
+                                        <b></b>
+                                    </label>
+                                    <p>Я хочу получать рекламные сообщения и новости о товарах и услугах</p>
+                                </div>
+                            </form>
+
+                            <form data-id="2" class="ket-form">
+                                <h3 class="ket-heading">Данные организации</h3>
+                                <div class="ket-form-content">
+                                    <label class="ket-label">
+                                        <span>ИНН организации</span>
+                                        <input type="text" placeholder="_ _ _ _ _ _ _ _ _ _">
+                                        <p class="ket-error">Поле не заполнено</p>
+                                    </label>
+                                    <label class="ket-label">
+                                        <span>Название организации</span>
+                                        <input type="text">
+                                        <p class="ket-error">Поле не заполнено</p>
+                                    </label>
+                                </div>
+                                <h3 class="ket-heading">Данные получателя</h3>
+                                <div class="ket-form-content">
+                                    <label class="ket-label">
+                                        <span>Фамилия и имя</span>
+                                        <input type="text">
+                                        <p class="ket-error">Поле не заполнено</p>
+                                    </label>
+    
+                                    <label class="ket-label">
+                                        <span>Электронная почта</span>
+                                        <input type="email">
+                                        <p class="ket-error">Поле не заполнено</p>
+                                    </label>
+        
+                                    <label class="ket-label">
+                                        <span>Номер телефона</span>
+                                        <input type="text" name="phone" placeholder="+7(_ _ _) _ _ _- _ _- _ _">
+                                        <p class="ket-error">Поле не заполнено</p>
+                                    </label>
+                                </div>
+
+                                <div class="ket-polic">
+                                    <label class="ket-polic-check">
+                                        <input type="checkbox">
+                                        <b></b>
+                                    </label>
+                                    <p>Я хочу получать рекламные сообщения и новости о товарах и услугах</p>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="ket-pay">
+                            <div class="ket-pay-title">
+                                <span>Всего товаров</span>
+                                <p>2</p>
+                            </div>
+                            <div class="ket-pay-title">
+                                <span>Итого</span>
+                                <b>240 000 Руб.</b>
+                            </div>
+                            <a href="#" class="ket-pay-link">Оформить заказ</a>
+                            <div class="ket-pay-desc">
+                                <img src="img/bus.svg" alt="">
+                                <span>Доставка осуществляется <span class="nowrap">в течении</span> 2х недель после оформления заказа</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        //= common/footer
+    </div>
+    <script src="js/main.js"></script>
+    <script>
+        const choices = new Choices($('.select-custom')[0]);
+        const choices2 = new Choices($('.select-custom1')[0]);
+    </script>
+</body>
+
+</html>

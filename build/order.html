@@ -412,517 +412,107 @@
                 </div>
             </div>
         </div>
-        <section class="ket-page">
-            <div class="container">
-                <h2 class="ket-title">Корзина</h2>
-                <div class="ket-wrapper">
-                    <div class="ket-content">
-                        <div class="ket-card">
-                            <div class="ket-card-img">
-                                <img src="img/item.png" alt="">
+        <main>
+            <section class="ket-page">
+                <div class="container">
+                    <h2 class="ket-title">Оформление заказа</h2>
+                    <div class="ket-wrapper">
+                        <div class="ket-content">
+                            <div class="ket-tabs">
+                                <a href="#" data-id="1" class="ket-tabs-item is-active">Физическое лицо</a>
+                                <a href="#" data-id="2" class="ket-tabs-item">Физическое лицо</a>
                             </div>
-                            <div class="ket-card-info">
-                                <p class="ket-card-article">Арт.: <span>1234876</span></p>
-                                <a href="#" class="ket-card-title">Окно мансардное Fakro Standart, FTS-V U4</a>
-                                <div class="ket-card-select">
-                                    <h3>Размеры, см</h3>
-                                    <div class="catalog__check-price">
-                                        <select name="" id="" class="select-custom">
-                                            <option value="">55х98</option>
-                                            <option value="">55х98</option>
-                                            <option value="">55х98</option>
-                                        </select>
-                                    </div>
+    
+                            <form data-id="1" class="ket-form is-active">
+                                <label class="ket-label disabled">
+                                    <span>Фамилия и имя</span>
+                                    <input type="text">
+                                    <p class="ket-error">Поле не заполнено</p>
+                                </label>
+    
+                                <label class="ket-label">
+                                    <span>Электронная почта</span>
+                                    <input type="email">
+                                    <p class="ket-error">Поле не заполнено</p>
+                                </label>
+    
+                                <label class="ket-label">
+                                    <span>Номер телефона</span>
+                                    <input type="text" name="phone" placeholder="+7(_ _ _) _ _ _- _ _- _ _">
+                                    <p class="ket-error">Поле не заполнено</p>
+                                </label>
+                                <div class="ket-polic">
+                                    <label class="ket-polic-check">
+                                        <input type="checkbox">
+                                        <b></b>
+                                    </label>
+                                    <p>Я хочу получать рекламные сообщения и новости о товарах и услугах</p>
                                 </div>
-                            </div>
+                            </form>
 
-                            <div class="ket-card-tools">
-                                <div class="ket-card-tools-row">
-                                    <div class="ket-card-calc">
-                                        <span class="ket-card-calc-min"></span>
-                                        <span class="ket-card-calc-num">1</span>
-                                        <span class="ket-card-calc-max"></span>
-                                    </div>
-                                    <div class="ket-card-tools-price"><b>142 000 </b>руб./шт</div>
+                            <form data-id="2" class="ket-form">
+                                <h3 class="ket-heading">Данные организации</h3>
+                                <div class="ket-form-content">
+                                    <label class="ket-label">
+                                        <span>ИНН организации</span>
+                                        <input type="text" placeholder="_ _ _ _ _ _ _ _ _ _">
+                                        <p class="ket-error">Поле не заполнено</p>
+                                    </label>
+                                    <label class="ket-label">
+                                        <span>Название организации</span>
+                                        <input type="text">
+                                        <p class="ket-error">Поле не заполнено</p>
+                                    </label>
                                 </div>
-                                <div class="ket-card-tools-row">
-                                    <a href="#" class="ket-card-tools-link">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <rect width="24" height="24" rx="12" fill="white"/>
-                                            <path d="M12 18L10.985 17.1368C7.38 14.0828 5 12.0687 5 9.59673C5 7.58256 6.694 6 8.85 6C10.068 6 11.237 6.5297 12 7.36676C12.763 6.5297 13.932 6 15.15 6C17.306 6 19 7.58256 19 9.59673C19 12.0687 16.62 14.0828 13.015 17.1433L12 18Z" fill="white" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="square"/>
-                                        </svg>                                            
-                                        <span>В избранное</span>                                          
-                                    </a>
-                                    <a href="#" class="ket-card-tools-link">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <rect width="24" height="24" rx="12" fill="white"/>
-                                            <path d="M5 7H6.55556H19" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M9.14286 7V5.5C9.14286 5.10218 9.29337 4.72064 9.56128 4.43934C9.82919 4.15804 10.1925 4 10.5714 4H13.4286C13.8075 4 14.1708 4.15804 14.4387 4.43934C14.7066 4.72064 14.8571 5.10218 14.8571 5.5V7M17 7V17.5C17 17.8978 16.8495 18.2794 16.5816 18.5607C16.3137 18.842 15.9503 19 15.5714 19H8.42857C8.04969 19 7.68633 18.842 7.41842 18.5607C7.15051 18.2794 7 17.8978 7 17.5V7H17Z" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>      
-                                        <span>Удалить</span>                                      
-                                    </a>
+                                <h3 class="ket-heading">Данные получателя</h3>
+                                <div class="ket-form-content">
+                                    <label class="ket-label">
+                                        <span>Фамилия и имя</span>
+                                        <input type="text">
+                                        <p class="ket-error">Поле не заполнено</p>
+                                    </label>
+    
+                                    <label class="ket-label">
+                                        <span>Электронная почта</span>
+                                        <input type="email">
+                                        <p class="ket-error">Поле не заполнено</p>
+                                    </label>
+        
+                                    <label class="ket-label">
+                                        <span>Номер телефона</span>
+                                        <input type="text" name="phone" placeholder="+7(_ _ _) _ _ _- _ _- _ _">
+                                        <p class="ket-error">Поле не заполнено</p>
+                                    </label>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="ket-card">
-                            <div class="ket-card-img">
-                                <img src="img/item.png" alt="">
-                            </div>
-                            <div class="ket-card-info">
-                                <p class="ket-card-article">Арт.: <span>1234876</span></p>
-                                <a href="#" class="ket-card-title">Окно мансардное Fakro Standart, FTS-V U4</a>
-                                <div class="ket-card-select">
-                                    <h3>Размеры, см</h3>
-                                    <div class="catalog__check-price">
-                                        <select name="" id="" class="select-custom1">
-                                            <option value="">55х98</option>
-                                            <option value="">55х98</option>
-                                            <option value="">55х98</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="ket-card-tools">
-                                <div class="ket-card-tools-row">
-                                    <div class="ket-card-calc">
-                                        <span class="ket-card-calc-min"></span>
-                                        <span class="ket-card-calc-num">1</span>
-                                        <span class="ket-card-calc-max"></span>
-                                    </div>
-                                    <div class="ket-card-tools-price"><b>142 000 </b>руб./шт</div>
+                                <div class="ket-polic">
+                                    <label class="ket-polic-check">
+                                        <input type="checkbox">
+                                        <b></b>
+                                    </label>
+                                    <p>Я хочу получать рекламные сообщения и новости о товарах и услугах</p>
                                 </div>
-                                <div class="ket-card-tools-row">
-                                    <a href="#" class="ket-card-tools-link">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <rect width="24" height="24" rx="12" fill="white"/>
-                                            <path d="M12 18L10.985 17.1368C7.38 14.0828 5 12.0687 5 9.59673C5 7.58256 6.694 6 8.85 6C10.068 6 11.237 6.5297 12 7.36676C12.763 6.5297 13.932 6 15.15 6C17.306 6 19 7.58256 19 9.59673C19 12.0687 16.62 14.0828 13.015 17.1433L12 18Z" fill="white" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="square"/>
-                                        </svg>                                            
-                                        <span>В избранное</span>                                          
-                                    </a>
-                                    <a href="#" class="ket-card-tools-link">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <rect width="24" height="24" rx="12" fill="white"/>
-                                            <path d="M5 7H6.55556H19" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M9.14286 7V5.5C9.14286 5.10218 9.29337 4.72064 9.56128 4.43934C9.82919 4.15804 10.1925 4 10.5714 4H13.4286C13.8075 4 14.1708 4.15804 14.4387 4.43934C14.7066 4.72064 14.8571 5.10218 14.8571 5.5V7M17 7V17.5C17 17.8978 16.8495 18.2794 16.5816 18.5607C16.3137 18.842 15.9503 19 15.5714 19H8.42857C8.04969 19 7.68633 18.842 7.41842 18.5607C7.15051 18.2794 7 17.8978 7 17.5V7H17Z" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>      
-                                        <span>Удалить</span>                                      
-                                    </a>
-                                </div>
+                            </form>
+                        </div>
+                        <div class="ket-pay">
+                            <div class="ket-pay-title">
+                                <span>Всего товаров</span>
+                                <p>2</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="ket-pay">
-                        <div class="ket-pay-title">
-                            <span>Всего товаров</span>
-                            <p>2</p>
-                        </div>
-                        <div class="ket-pay-title">
-                            <span>Итого</span>
-                            <b>240 000 Руб.</b>
-                        </div>
-                        <a href="#" class="ket-pay-link">Оформить заказ</a>
-                        <div class="ket-pay-desc">
-                            <img src="img/bus.svg" alt="">
-                            <span>Доставка осуществляется <span class="nowrap">в течении</span> 2х недель после оформления заказа</span>
+                            <div class="ket-pay-title">
+                                <span>Итого</span>
+                                <b>240 000 Руб.</b>
+                            </div>
+                            <a href="#" class="ket-pay-link">Оформить заказ</a>
+                            <div class="ket-pay-desc">
+                                <img src="img/bus.svg" alt="">
+                                <span>Доставка осуществляется <span class="nowrap">в течении</span> 2х недель после оформления заказа</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="useful ket-useful">
-            <div class="container useful__container">
-                <div class="useful__title">Вам пригодится</div>
-                <ul class="useful__group">
-                    <li class="useful__group-item">Оклады для окон <span>12</span></li>
-                    <li class="useful__group-item is-active">Теплоизоляционный пояс <span>8</span></li>
-                    <li class="useful__group-item">Откосы <span>4</span></li>
-                    <li class="useful__group-item">Расширительные рамки для откосов <span>4</span></li>
-                    <li class="useful__group-item">Планки для внутренней отделки <span>2</span></li>
-                </ul>
-                <div class="useful__row">
-                    <div class="product-slick">
-                        <div class="slick-item">
-                            <div class="product">
-                                <div class="catalog__card-interface">
-                                    <div class="catalog__card-tooltip catalog__card-tooltip-favourite">
-                                        <div class="catalog__favourite-wrapper">
-                                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M8 13L6.985 12.1368C3.38 9.08283 1 7.06867 1 4.59673C1 2.58256 2.694 1 4.85 1C6.068 1 7.237 1.5297 8 2.36676C8.763 1.5297 9.932 1 11.15 1C13.306 1 15 2.58256 15 4.59673C15 7.06867 12.62 9.08283 9.015 12.1433L8 13Z"
-                                                    fill="white" stroke="#BDBDBD" stroke-width="1.5"
-                                                    stroke-linecap="square" />
-                                            </svg>
-                                        </div>
-                                        <div class="catalog__card-popup catalog__card-popup-favourite">Добавить в
-                                            избранное
-                                        </div>
-                                    </div>
-                                    <div class="catalog__card-tooltip catalog__card-tooltip-sravnit">
-                                        <div class="catalog__sravnit-wrapper">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <rect width="24" height="24" rx="12" fill="white" />
-                                                <line x1="5.75" y1="12.75" x2="5.75" y2="18.25" stroke="#BDBDBD"
-                                                    stroke-width="1.5" stroke-linecap="round" />
-                                                <line x1="9.75" y1="3.75" x2="9.75" y2="18.25" stroke="#BDBDBD"
-                                                    stroke-width="1.5" stroke-linecap="round" />
-                                                <line x1="13.75" y1="8.75" x2="13.75" y2="18.25" stroke="#BDBDBD"
-                                                    stroke-width="1.5" stroke-linecap="round" />
-                                                <line x1="17.75" y1="6.75" x2="17.75" y2="18.25" stroke="#BDBDBD"
-                                                    stroke-width="1.5" stroke-linecap="round" />
-                                            </svg>
-
-                                        </div>
-
-                                        <div class="catalog__card-popup catalog__card-popup-sravnit">Добавить в
-                                            сравнение</div>
-                                    </div>
-                                </div>
-                                <div class="slick-catalog-wrapper">
-                                    <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
-                                    <div class="slick-catalog-share">-20%</div>
-                                    <div class="div-slick-catalog-nav">
-                                        <div class="div-slick-catalog-nav-item"></div>
-                                        <div class="div-slick-catalog-nav-item"></div>
-                                        <div class="div-slick-catalog-nav-item"></div>
-                                        <div class="div-slick-catalog-nav-item"></div>
-                                    </div>
-                                    <div class="catalog__card-img-wrapper slick-catalog">
-                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img">
-
-                                        </div>
-                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img">
-
-                                        </div>
-                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img">
-
-                                        </div>
-                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="catalog__card-content">
-                                    <h4 class="catalog__card-title">Теплоизоляционный пояс XWT коробки мансардного окна
-                                        FAKRO
-                                    </h4>
-                                    <div class="catalog__check-price">
-                                        <div class="catalog__price viewed__price">
-                                            <bold>3 000 </bold> <span class="nowrap">руб./шт</span>
-                                        </div>
-
-                                    </div>
-                                    <button class="catalog__button">В корзину</button>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slick-item">
-                            <div class="product">
-                                <div class="catalog__card-interface">
-                                    <div class="catalog__card-tooltip catalog__card-tooltip-favourite">
-                                        <div class="catalog__favourite-wrapper">
-                                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M8 13L6.985 12.1368C3.38 9.08283 1 7.06867 1 4.59673C1 2.58256 2.694 1 4.85 1C6.068 1 7.237 1.5297 8 2.36676C8.763 1.5297 9.932 1 11.15 1C13.306 1 15 2.58256 15 4.59673C15 7.06867 12.62 9.08283 9.015 12.1433L8 13Z"
-                                                    fill="white" stroke="#BDBDBD" stroke-width="1.5"
-                                                    stroke-linecap="square" />
-                                            </svg>
-                                        </div>
-                                        <div class="catalog__card-popup catalog__card-popup-favourite">Добавить в
-                                            избранное
-                                        </div>
-                                    </div>
-                                    <div class="catalog__card-tooltip catalog__card-tooltip-sravnit">
-                                        <div class="catalog__sravnit-wrapper">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <rect width="24" height="24" rx="12" fill="white" />
-                                                <line x1="5.75" y1="12.75" x2="5.75" y2="18.25" stroke="#BDBDBD"
-                                                    stroke-width="1.5" stroke-linecap="round" />
-                                                <line x1="9.75" y1="3.75" x2="9.75" y2="18.25" stroke="#BDBDBD"
-                                                    stroke-width="1.5" stroke-linecap="round" />
-                                                <line x1="13.75" y1="8.75" x2="13.75" y2="18.25" stroke="#BDBDBD"
-                                                    stroke-width="1.5" stroke-linecap="round" />
-                                                <line x1="17.75" y1="6.75" x2="17.75" y2="18.25" stroke="#BDBDBD"
-                                                    stroke-width="1.5" stroke-linecap="round" />
-                                            </svg>
-
-                                        </div>
-
-                                        <div class="catalog__card-popup catalog__card-popup-sravnit">Добавить в
-                                            сравнение</div>
-                                    </div>
-                                </div>
-                                <div class="slick-catalog-wrapper">
-                                    <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
-                                    <div class="slick-catalog-share">-5%</div>
-                                    <div class="div-slick-catalog-nav">
-                                        <div class="div-slick-catalog-nav-item"></div>
-                                        <div class="div-slick-catalog-nav-item"></div>
-                                        <div class="div-slick-catalog-nav-item"></div>
-                                        <div class="div-slick-catalog-nav-item"></div>
-                                    </div>
-                                    <div class="catalog__card-img-wrapper slick-catalog">
-                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img">
-
-                                        </div>
-                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img">
-
-                                        </div>
-                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img">
-
-                                        </div>
-                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="catalog__card-content">
-                                    <h4 class="catalog__card-title">Теплоизоляционный пояс XWT коробки мансардного окна
-                                        Velux
-                                    </h4>
-                                    <div class="catalog__check-price">
-                                        <div class="catalog__price viewed__price">
-                                            <bold>3 100 </bold> <span class="nowrap">руб./шт</span>
-                                        </div>
-                                    </div>
-                                    <button class="catalog__button">В корзину</button>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slick-item">
-                            <div class="product">
-                                <div class="catalog__card-interface">
-                                    <div class="catalog__card-tooltip catalog__card-tooltip-favourite">
-                                        <div class="catalog__favourite-wrapper">
-                                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M8 13L6.985 12.1368C3.38 9.08283 1 7.06867 1 4.59673C1 2.58256 2.694 1 4.85 1C6.068 1 7.237 1.5297 8 2.36676C8.763 1.5297 9.932 1 11.15 1C13.306 1 15 2.58256 15 4.59673C15 7.06867 12.62 9.08283 9.015 12.1433L8 13Z"
-                                                    fill="white" stroke="#BDBDBD" stroke-width="1.5"
-                                                    stroke-linecap="square" />
-                                            </svg>
-                                        </div>
-                                        <div class="catalog__card-popup catalog__card-popup-favourite">Добавить в
-                                            избранное
-                                        </div>
-                                    </div>
-                                    <div class="catalog__card-tooltip catalog__card-tooltip-sravnit">
-                                        <div class="catalog__sravnit-wrapper">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <rect width="24" height="24" rx="12" fill="white" />
-                                                <line x1="5.75" y1="12.75" x2="5.75" y2="18.25" stroke="#BDBDBD"
-                                                    stroke-width="1.5" stroke-linecap="round" />
-                                                <line x1="9.75" y1="3.75" x2="9.75" y2="18.25" stroke="#BDBDBD"
-                                                    stroke-width="1.5" stroke-linecap="round" />
-                                                <line x1="13.75" y1="8.75" x2="13.75" y2="18.25" stroke="#BDBDBD"
-                                                    stroke-width="1.5" stroke-linecap="round" />
-                                                <line x1="17.75" y1="6.75" x2="17.75" y2="18.25" stroke="#BDBDBD"
-                                                    stroke-width="1.5" stroke-linecap="round" />
-                                            </svg>
-
-                                        </div>
-
-                                        <div class="catalog__card-popup catalog__card-popup-sravnit">Добавить в
-                                            сравнение</div>
-                                    </div>
-                                </div>
-                                <div class="slick-catalog-wrapper">
-                                    <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
-                                    <div class="div-slick-catalog-nav">
-                                        <div class="div-slick-catalog-nav-item"></div>
-                                        <div class="div-slick-catalog-nav-item"></div>
-                                        <div class="div-slick-catalog-nav-item"></div>
-                                        <div class="div-slick-catalog-nav-item"></div>
-                                    </div>
-                                    <div class="catalog__card-img-wrapper slick-catalog">
-                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img">
-
-                                        </div>
-                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img">
-
-                                        </div>
-                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img">
-
-                                        </div>
-                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="catalog__card-content">
-                                    <h4 class="catalog__card-title">Комплект для гидро-теплоизоляции Велюкс BDX
-                                    </h4>
-                                    <div class="catalog__check-price">
-                                        <div class="catalog__price viewed__price">
-                                            <bold>4 200 </bold> <span class="nowrap">руб./шт</span>
-                                        </div>
-                                    </div>
-                                    <button class="catalog__button">В корзину</button>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slick-item">
-                            <div class="product">
-                                <div class="catalog__card-interface">
-                                    <div class="catalog__card-tooltip catalog__card-tooltip-favourite">
-                                        <div class="catalog__favourite-wrapper">
-                                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M8 13L6.985 12.1368C3.38 9.08283 1 7.06867 1 4.59673C1 2.58256 2.694 1 4.85 1C6.068 1 7.237 1.5297 8 2.36676C8.763 1.5297 9.932 1 11.15 1C13.306 1 15 2.58256 15 4.59673C15 7.06867 12.62 9.08283 9.015 12.1433L8 13Z"
-                                                    fill="white" stroke="#BDBDBD" stroke-width="1.5"
-                                                    stroke-linecap="square" />
-                                            </svg>
-                                        </div>
-                                        <div class="catalog__card-popup catalog__card-popup-favourite">Добавить в
-                                            избранное
-                                        </div>
-                                    </div>
-                                    <div class="catalog__card-tooltip catalog__card-tooltip-sravnit">
-                                        <div class="catalog__sravnit-wrapper">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <rect width="24" height="24" rx="12" fill="white" />
-                                                <line x1="5.75" y1="12.75" x2="5.75" y2="18.25" stroke="#BDBDBD"
-                                                    stroke-width="1.5" stroke-linecap="round" />
-                                                <line x1="9.75" y1="3.75" x2="9.75" y2="18.25" stroke="#BDBDBD"
-                                                    stroke-width="1.5" stroke-linecap="round" />
-                                                <line x1="13.75" y1="8.75" x2="13.75" y2="18.25" stroke="#BDBDBD"
-                                                    stroke-width="1.5" stroke-linecap="round" />
-                                                <line x1="17.75" y1="6.75" x2="17.75" y2="18.25" stroke="#BDBDBD"
-                                                    stroke-width="1.5" stroke-linecap="round" />
-                                            </svg>
-
-                                        </div>
-
-                                        <div class="catalog__card-popup catalog__card-popup-sravnit">Добавить в
-                                            сравнение</div>
-                                    </div>
-                                </div>
-                                <div class="slick-catalog-wrapper">
-                                    <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
-                                    <div class="div-slick-catalog-nav">
-                                        <div class="div-slick-catalog-nav-item"></div>
-                                        <div class="div-slick-catalog-nav-item"></div>
-                                        <div class="div-slick-catalog-nav-item"></div>
-                                        <div class="div-slick-catalog-nav-item"></div>
-                                    </div>
-                                    <div class="catalog__card-img-wrapper slick-catalog">
-                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img">
-
-                                        </div>
-                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img">
-
-                                        </div>
-                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img">
-
-                                        </div>
-                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="catalog__card-content">
-                                    <h4 class="catalog__card-title">Теплоизоляционный пояс XWT коробки мансардного окна
-                                        Velux
-                                    </h4>
-                                    <div class="catalog__check-price">
-                                        <div class="catalog__price viewed__price">
-                                            <bold>3 000 </bold> <span class="nowrap">руб./шт</span>
-                                        </div>
-                                    </div>
-                                    <button class="catalog__button">В корзину</button>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slick-item">
-                            <div class="product">
-                                <div class="catalog__card-interface">
-                                    <div class="catalog__card-tooltip catalog__card-tooltip-favourite">
-                                        <div class="catalog__favourite-wrapper">
-                                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M8 13L6.985 12.1368C3.38 9.08283 1 7.06867 1 4.59673C1 2.58256 2.694 1 4.85 1C6.068 1 7.237 1.5297 8 2.36676C8.763 1.5297 9.932 1 11.15 1C13.306 1 15 2.58256 15 4.59673C15 7.06867 12.62 9.08283 9.015 12.1433L8 13Z"
-                                                    fill="white" stroke="#BDBDBD" stroke-width="1.5"
-                                                    stroke-linecap="square" />
-                                            </svg>
-                                        </div>
-                                        <div class="catalog__card-popup catalog__card-popup-favourite">Добавить в
-                                            избранное
-                                        </div>
-                                    </div>
-                                    <div class="catalog__card-tooltip catalog__card-tooltip-sravnit">
-                                        <div class="catalog__sravnit-wrapper">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <rect width="24" height="24" rx="12" fill="white" />
-                                                <line x1="5.75" y1="12.75" x2="5.75" y2="18.25" stroke="#BDBDBD"
-                                                    stroke-width="1.5" stroke-linecap="round" />
-                                                <line x1="9.75" y1="3.75" x2="9.75" y2="18.25" stroke="#BDBDBD"
-                                                    stroke-width="1.5" stroke-linecap="round" />
-                                                <line x1="13.75" y1="8.75" x2="13.75" y2="18.25" stroke="#BDBDBD"
-                                                    stroke-width="1.5" stroke-linecap="round" />
-                                                <line x1="17.75" y1="6.75" x2="17.75" y2="18.25" stroke="#BDBDBD"
-                                                    stroke-width="1.5" stroke-linecap="round" />
-                                            </svg>
-
-                                        </div>
-
-                                        <div class="catalog__card-popup catalog__card-popup-sravnit">Добавить в
-                                            сравнение</div>
-                                    </div>
-                                </div>
-                                <div class="slick-catalog-wrapper">
-                                    <div class="slick-catalog-article">Арт.: <b>1234876</b></div>
-                                    <div class="div-slick-catalog-nav">
-                                        <div class="div-slick-catalog-nav-item"></div>
-                                        <div class="div-slick-catalog-nav-item"></div>
-                                        <div class="div-slick-catalog-nav-item"></div>
-                                        <div class="div-slick-catalog-nav-item"></div>
-                                    </div>
-                                    <div class="catalog__card-img-wrapper slick-catalog">
-                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img">
-
-                                        </div>
-                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img">
-
-                                        </div>
-                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img">
-
-                                        </div>
-                                        <div class="click-item"><img src="img/item.png" class="catalog__card-img">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="catalog__card-content">
-                                    <h4 class="catalog__card-title">Окно мансардное Fakro Standart, FTS-V U4
-                                    </h4>
-                                    <div class="catalog__check-price">
-                                        <div class="catalog__price viewed__price">
-                                            <bold>142 000</bold> <span class="nowrap">руб./шт</span>
-                                        </div>
-                                    </div>
-                                    <button class="catalog__button">В корзину</button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
+            </section>
+        </main>
         <footer class="footer">
             <div class="container footer-row-wrap">
                 <ul class="footer-row">

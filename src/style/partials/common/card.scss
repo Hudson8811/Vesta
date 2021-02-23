@@ -882,3 +882,10 @@
     height: 100%;
   }
 }
+
+.useful__group-item {
+  &:hover {
+    border-color: #828282;
+    cursor: pointer;
+  }
+}

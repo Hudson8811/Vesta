@@ -37,6 +37,8 @@ e.exports=function(e){var t={};function i(n){if(t[n])return t[n].exports;var r=t
 /* my scripts */
 
 $(document).ready(function () {
+
+
 $('.search input').focus(function(){
     $(this).parent('.search').removeClass('search-full_value');
 })
@@ -357,6 +359,29 @@ $('.div-slick-catalog-nav-item').mouseenter(function(e){
     const index = $this.index();
     const item = $this.parent('.div-slick-catalog-nav').siblings('.slick-catalog');
     item.slick('slickGoTo', index);
+});
+
+$('.ket-tabs-item').click(function(e){
+    const id = $(this).data('id');
+    e.preventDefault();
+    $('.ket-tabs-item').removeClass('is-active');
+    $('.ket-form').removeClass('is-active');
+    $(this).addClass('is-active');
+    $(`.ket-form[data-id="${id}"]`).addClass('is-active');
+});
+
+
+$(document).on("focus", ".ket-label input", function() {
+    $(this).parent().addClass('is-active');
+    $(this).parent().removeClass('error');
+});
+$(document).on("blur", ".ket-label input", function() {
+    if ($(this).val() == "") {
+        $(this).parent().removeClass('is-active');
+        $(this).parent().addClass('error');
+    } else {
+        $(this).parent().removeClass("error");
+    }
 });
 
 });
