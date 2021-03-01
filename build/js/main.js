@@ -382,4 +382,12 @@ $(document).on("blur", ".ket-label input", function() {
     }
 });
 
+$('.go_work').click(function(e){
+    e.preventDefault();
+    $.fancybox.open({
+        src  : '#go_work-modal',
+        type : 'inline',
+    });
+});
+
 });
