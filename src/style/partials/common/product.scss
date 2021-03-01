@@ -3,10 +3,9 @@
   height: 100%;
   min-height: 477px;
   padding: 24px;
-  border: 1px solid #e0e0e0;
+  outline: 1px solid #e0e0e0;
   border-bottom-width: 1px;
   transition: box-shadow 0.2s linear;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
@@ -101,6 +100,7 @@
   // }
 
   &:hover {
+    z-index: 2;
     box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.15);
 
     .catalog__card-interface {
@@ -118,8 +118,20 @@
 }
 
 .product-slick {
-  border-left: 1px solid #e0e0e0;
-  border-right: 1px solid #e0e0e0;
+  .slick-track {
+    margin: 0;
+  }
+
+  .slick-list {
+    overflow: visible;
+  }
+
+  .slick-item {
+    transition: opacity 0.2s linear;
+    &:not(.slick-active) {
+      opacity: 0;
+    }
+  }
 
   @include for-mobile {
     border-right: 0;
