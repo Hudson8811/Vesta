@@ -353,3 +353,15 @@ $('.go_work').click(function(e){
 });
 
 });
+
+$('.card__menu-item').click(function(){
+    const $this = $(this)
+    const id = $this.data('id')
+
+    if(!$this.hasClass('active')){
+        $('.card__menu-item').removeClass('active')
+        $('.card__tabs-content').removeClass('active')
+        $this.addClass('active')
+        $(`.card__tabs-content[data-id="${id}"]`).addClass('active')
+    }
+})

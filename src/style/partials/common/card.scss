@@ -536,7 +536,8 @@
           margin-right: 27px;
         }
       }
-      &:hover {
+      &:hover,
+      &.active {
         color: #eb5757;
         .card__menu-decor {
           position: absolute;
@@ -887,5 +888,33 @@
   &:hover {
     border-color: #828282;
     cursor: pointer;
+  }
+}
+
+.card__tabs {
+  &-wrapper {
+    @include for-tablet {
+      padding-top: 70px;
+    }
+  }
+
+  &-content {
+    padding: 20px 0;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    p {
+      display: block;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 20px;
+      color: #000;
+      & + p {
+        margin-top: 15px;
+      }
+    }
   }
 }
