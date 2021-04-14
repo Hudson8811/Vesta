@@ -509,7 +509,8 @@
         &:first-child {
           padding-left: 20px;
 
-          &:hover {
+          &:hover,
+          &.active {
             .card__menu-decor {
               width: calc(100% - 20px);
               left: 20px;
@@ -520,7 +521,8 @@
         &:last-child {
           padding-right: 20px;
 
-          &:hover {
+          &:hover,
+          &.active {
             .card__menu-decor {
               width: calc(100% - 20px);
               right: 20px;
@@ -893,13 +895,16 @@
 
 .card__tabs {
   &-wrapper {
+    .kit {
+      padding-top: 0 !important;
+    }
     @include for-tablet {
       padding-top: 70px;
     }
   }
 
   &-content {
-    padding: 20px 0;
+    padding: 36px 0 20px;
     display: none;
 
     &.active {
